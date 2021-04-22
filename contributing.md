@@ -27,7 +27,7 @@
 
 # Creating a new Project and retrieving org data
  - Make sure you are in the folder for the cloned project in command line
- - Run "sfdx force:project:create projectname={name-of-business} --manifest"
+ - Run "sfdx force:project:create --projectname {name-of-business} --manifest"
  - New folder should be created in the name of your business
  - Navigate to this project folder in command line
  - Run "sfdx force:source:retrieve -u {name-of-business} -x ./manifest/package.xml"
