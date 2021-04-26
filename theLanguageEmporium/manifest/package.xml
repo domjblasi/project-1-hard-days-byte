@@ -64,5 +64,9 @@
         <members>*</members>
         <name>CustomApplication</name>
     </types>
+    <types>
+        <members>*</members>
+        <name>LightningExperienceTheme</name>
+    </types>
     <version>50.0</version>
 </Package>
