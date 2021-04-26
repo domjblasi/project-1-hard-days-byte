@@ -61,7 +61,11 @@
         <name>BrandingSet</name>
     </types>
     <types>
-        <members>*</members>
+        <members>Recruiting</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>Content_Development</members>
         <name>CustomApplication</name>
     </types>
     <types>
