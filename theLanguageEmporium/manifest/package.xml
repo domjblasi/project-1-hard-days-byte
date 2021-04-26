@@ -56,5 +56,21 @@
         <members>Product2Family</members>
         <name>StandardValueSet</name>
     </types>
+    <types>
+        <members>*</members>
+        <name>BrandingSet</name>
+    </types>
+    <types>
+        <members>Recruiting</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>Content_Development</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>LightningExperienceTheme</name>
+    </types>
     <version>50.0</version>
 </Package>
