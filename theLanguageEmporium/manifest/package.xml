@@ -56,5 +56,9 @@
         <members>Product2Family</members>
         <name>StandardValueSet</name>
     </types>
+    <types>
+        <members>*</members>
+        <name>BrandingSet</name>
+    </types>
     <version>50.0</version>
 </Package>
