@@ -69,7 +69,31 @@
         <name>CustomApplication</name>
     </types>
     <types>
-        <members>*</members>
+        <members>Account_Record_Page</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>Content_Development_UtilityBar</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>Home_Page_Default</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>Lesson_Record_Page</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>QA_Review_Record_Page</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>Recruiting_Home</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>Recruiting_UtilityBar</members>
         <name>FlexiPage</name>
     </types>
     <types>
