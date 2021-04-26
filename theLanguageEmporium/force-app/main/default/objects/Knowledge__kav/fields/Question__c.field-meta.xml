@@ -6,5 +6,5 @@
     <label>Question</label>
     <length>32768</length>
     <type>Html</type>
-    <visibleLines>0</visibleLines>
+    <visibleLines>20</visibleLines>
 </CustomField>
