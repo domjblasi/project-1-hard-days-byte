@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Email_Upon_Creation</fullName>
+        <description>Email Upon Creation</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <field>Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>LE_Emails/Account_Creation_Email</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Tutor_Account_to_Active</fullName>
+        <field>Active__c</field>
+        <literalValue>1</literalValue>
+        <name>Tutor Account to Active</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Tutor_Account_to_Inactive</fullName>
+        <field>Active__c</field>
+        <literalValue>0</literalValue>
+        <name>Tutor Account to Inactive</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Tutor Account Approved</fullName>
+        <actions>
+            <name>Email_Upon_Creation</name>
+            <type>Alert</type>
+        </actions>
+        <active>true</active>
+        <formula>true</formula>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

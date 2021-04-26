@@ -16,54 +16,6 @@
         <formFactor>Small</formFactor>
         <pageOrSobjectType>QA_Review__c</pageOrSobjectType>
         <type>Flexipage</type>
-        <profile>*ConDev</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>QA_Review_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>QA_Review__c</pageOrSobjectType>
-        <type>Flexipage</type>
-        <profile>*ConDev</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>QA_Review_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>QA_Review__c</pageOrSobjectType>
-        <type>Flexipage</type>
-        <profile>*Exec</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>QA_Review_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>QA_Review__c</pageOrSobjectType>
-        <type>Flexipage</type>
-        <profile>*Exec</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>QA_Review_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>QA_Review__c</pageOrSobjectType>
-        <type>Flexipage</type>
-        <profile>*Tester</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>QA_Review_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>QA_Review__c</pageOrSobjectType>
-        <type>Flexipage</type>
-        <profile>*Tester</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>QA_Review_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>QA_Review__c</pageOrSobjectType>
-        <type>Flexipage</type>
         <profile>Admin</profile>
     </profileActionOverrides>
     <profileActionOverrides>
@@ -80,76 +32,7 @@
         <formFactor>Large</formFactor>
         <pageOrSobjectType>standard-home</pageOrSobjectType>
         <type>Flexipage</type>
-        <profile>*Exec</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>Tab</actionName>
-        <content>Home_Page_Default</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>standard-home</pageOrSobjectType>
-        <type>Flexipage</type>
-        <profile>*Tester</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>Tab</actionName>
-        <content>Home_Page_Default</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>standard-home</pageOrSobjectType>
-        <type>Flexipage</type>
-        <profile>*ConDev</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>Tab</actionName>
-        <content>Home_Page_Default</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>standard-home</pageOrSobjectType>
-        <type>Flexipage</type>
         <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Lesson_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Lesson__c</pageOrSobjectType>
-        <recordType>Lesson__c.Tutoring</recordType>
-        <type>Flexipage</type>
-        <profile>*ConDev</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Lesson_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Lesson__c</pageOrSobjectType>
-        <recordType>Lesson__c.Tutoring</recordType>
-        <type>Flexipage</type>
-        <profile>*Exec</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Lesson_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Lesson__c</pageOrSobjectType>
-        <recordType>Lesson__c.Tutoring</recordType>
-        <type>Flexipage</type>
-        <profile>*Exec</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Lesson_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Lesson__c</pageOrSobjectType>
-        <recordType>Lesson__c.Tutoring</recordType>
-        <type>Flexipage</type>
-        <profile>*Tester</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Lesson_Record_Page</content>
-        <formFactor>Large</formFactor>
-        <pageOrSobjectType>Lesson__c</pageOrSobjectType>
-        <recordType>Lesson__c.Tutoring</recordType>
-        <type>Flexipage</type>
-        <profile>*Tester</profile>
     </profileActionOverrides>
     <profileActionOverrides>
         <actionName>View</actionName>
@@ -168,15 +51,6 @@
         <recordType>Lesson__c.Tutoring</recordType>
         <type>Flexipage</type>
         <profile>Admin</profile>
-    </profileActionOverrides>
-    <profileActionOverrides>
-        <actionName>View</actionName>
-        <content>Lesson_Record_Page</content>
-        <formFactor>Small</formFactor>
-        <pageOrSobjectType>Lesson__c</pageOrSobjectType>
-        <recordType>Lesson__c.Tutoring</recordType>
-        <type>Flexipage</type>
-        <profile>*ConDev</profile>
     </profileActionOverrides>
     <tabs>standard-home</tabs>
     <tabs>Course__c</tabs>
