@@ -10,19 +10,6 @@
         <type>Region</type>
     </flexiPageRegions>
     <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>flowLayout</name>
-                    <value>oneColumn</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>flowName</name>
-                    <value>Create_a_Lesson</value>
-                </componentInstanceProperties>
-                <componentName>flowruntime:interview</componentName>
-            </componentInstance>
-        </itemInstances>
         <name>left</name>
         <type>Region</type>
     </flexiPageRegions>

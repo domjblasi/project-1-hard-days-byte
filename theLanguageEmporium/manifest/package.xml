@@ -69,23 +69,7 @@
         <name>CustomApplication</name>
     </types>
     <types>
-        <members>Recruiting_UtilityBar</members>
-        <name>FlexiPage</name>
-    </types>
-    <types>
-        <members>Content_Development_UtilityBar</members>
-        <name>FlexiPage</name>
-    </types>
-    <types>
-        <members>QA_Review_Record_Page</members>
-        <name>FlexiPage</name>
-    </types>
-    <types>
-        <members>Recruiting_Home</members>
-        <name>FlexiPage</name>
-    </types>
-    <types>
-        <members>Home_Page_Default</members>
+        <members>*</members>
         <name>FlexiPage</name>
     </types>
     <types>
