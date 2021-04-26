@@ -69,6 +69,14 @@
         <name>CustomApplication</name>
     </types>
     <types>
+        <members>Recruiting_UtilityBar</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>Content_Development_UtilityBar</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
         <members>*</members>
         <name>LightningExperienceTheme</name>
     </types>
