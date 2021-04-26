@@ -85,6 +85,10 @@
         <name>FlexiPage</name>
     </types>
     <types>
+        <members>Home_Page_Default</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
         <members>*</members>
         <name>CustomTab</name>
     </types>
