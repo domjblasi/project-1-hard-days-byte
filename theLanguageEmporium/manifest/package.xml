@@ -77,6 +77,14 @@
         <name>FlexiPage</name>
     </types>
     <types>
+        <members>QA_Review_Record_Page</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>Recruiting_Home</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
         <members>*</members>
         <name>CustomTab</name>
     </types>
