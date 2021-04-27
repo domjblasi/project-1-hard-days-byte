@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display:flex;
+}
+
+#sidebarNav {
+  width: 20vw;
+  height: 100vh;
+  position:sticky;
+  top: 0;
+  left: 0;
+  background: #5D4B6F;
+}
+
+#navBrand img {
+  width: 100%
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  list-style-type: none;
+}
+
+.navlink {
+  font-size: 35px;
+  margin-left: 10px;
+}
+
+.navlink a { 
+  text-decoration: none;
+}
+
+.navlink a:hover {
+  color:blue;
+}
+
+#landingMain {
+  width: 80%;
+  background-image: url('https://images.unsplash.com/photo-1585871746932-e133d3fedf4d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=405&q=80');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  padding-top: 25px;
+}
+
+#landingQuote {
+  width: 80%;
+  margin: 0 auto;
+  text-align:center;
+  color: white;
+  font-size: 40px;
+}
+
+.btn-large {
+  padding: 12px;
+  border-radius: 25px;
+  border: 2px solid black;
+  font-size: 35px;
+  background-color:grey;
+  color: black;
+  margin: 5px;
+  text-decoration: none;
+}
