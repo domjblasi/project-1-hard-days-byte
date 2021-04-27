@@ -1,7 +1,7 @@
 <apex:component layout="none">
  <aside id="sideBar">
  	    <nav id="sidebarNav">
-            <a id="navBrand" href="/apex/LandingPage"></a>
+            <a id="navBrand" href="/apex/LandingPage"><apex:image value="{!$Resource.Logo}"/></a>
         	<ul class="navigation">
                 <li class="navlink"><a href="/apex/LandingPage">Home</a></li>
             	<li class="navlink"><a href="/apex/store">Store</a></li>

@@ -4,18 +4,35 @@ body {
   box-sizing: border-box;
 }
 
-#navBrand {
-  background-image: url("../../Logo.png");
-  height: 100px;
-  width: 100%;
+#sidebarNav {
+  width: 20vw;
+  height: 100vh;
+  position:sticky;
+  top: 0;
+  left: 0;
+  background: #5D4B6F;
+}
+
+#navBrand img {
+  width: 100%
 }
 
 .navigation {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  list-style-type: none;
 }
 
 .navlink {
   font-size: 35px;
+  margin-left: 10px;
+}
+
+.navlink a { 
+  text-decoration: none;
+}
+
+.navlink a:hover {
+  color:blue;
 }
