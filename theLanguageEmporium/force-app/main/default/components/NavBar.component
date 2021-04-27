@@ -1,5 +1,5 @@
 <apex:component layout="none">
- <aside>
+ <aside id="sideBar">
  	    <nav id="sidebarNav">
             <a id="navBrand" href="/apex/LandingPage"></a>
         	<ul class="navigation">
