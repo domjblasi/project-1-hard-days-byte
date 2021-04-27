@@ -1,6 +1,5 @@
 <apex:page >
     <apex:stylesheet value="{!URLFOR($Resource.StyleZip, 'index.css')}"/>
-    <h1>
-       SALESFORCE RULES!
-    </h1>
+    <c:NavBar />
+    <apex:includeScript value="{!$Resource.customJavascript}"/>
 </apex:page>

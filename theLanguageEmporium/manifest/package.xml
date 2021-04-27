@@ -112,6 +112,7 @@
         <members>*</members>
         <name>Role</name>
     </types>
+    <types>
         <members>*</members>
         <name>LightningExperienceTheme</name>
     </types>

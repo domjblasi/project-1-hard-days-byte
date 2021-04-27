@@ -1,0 +1,14 @@
+<apex:component layout="none">
+ <aside>
+ 	    <nav id="sidebarNav">
+            <a id="navBrand" href="/apex/LandingPage"></a>
+        	<ul class="navigation">
+                <li class="navlink"><a href="/apex/LandingPage">Home</a></li>
+            	<li class="navlink"><a href="/apex/store">Store</a></li>
+            	<li class="navlink"><a href="/apex/learner">Learner Portal</a></li>
+            	<li class="navlink"><a href="/apex/leaderboard">Leaderboard</a></li>
+                <li class="navlink"><a href="/apex/jobs">Jobs</a></li>
+        	</ul>
+    	</nav>
+ </aside>
+</apex:component>
