@@ -37,11 +37,51 @@
         <name>StaticResource</name>
     </types>
     <types>
-        <members>*</members>
+        <members>Account</members>
         <name>CustomObject</name>
     </types>
     <types>
-        <members>Account</members>
+        <members>Candidate__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Course__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Course_Developer__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Development_Team__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Job_Application__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Learner_Access__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Lesson__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Line_Item__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Offer__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Order</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Position__c</members>
         <name>CustomObject</name>
     </types>
     <types>
@@ -49,7 +89,19 @@
         <name>CustomObject</name>
     </types>
     <types>
-        <members>Order</members>
+        <members>QA_Review__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Session__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Tutor__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Tutor_Application__c</members>
         <name>CustomObject</name>
     </types>
     <types>
@@ -97,7 +149,43 @@
         <name>FlexiPage</name>
     </types>
     <types>
-        <members>*</members>
+        <members>Candidate__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Course__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Course_Developer__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Development_Team__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Job_Application__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Lesson__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Position__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>QA_Review__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Tutor__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Tutor_Application__c</members>
         <name>CustomTab</name>
     </types>
     <types>
@@ -105,16 +193,16 @@
         <name>LightningExperienceTheme</name>
     </types>
     <types>
-        <members>*</members>
+        <members>HeadConDev</members>
+        <name>PermissionSet</name>
+    </types>
+    <types>
+        <members>HeadConDev</members>
         <name>PermissionSet</name>
     </types>
     <types>
         <members>*</members>
         <name>Role</name>
-    </types>
-    <types>
-        <members>*</members>
-        <name>LightningExperienceTheme</name>
     </types>
     <version>50.0</version>
 </Package>
