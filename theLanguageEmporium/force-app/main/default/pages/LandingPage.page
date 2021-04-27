@@ -1,5 +1,9 @@
 <apex:page >
     <apex:stylesheet value="{!URLFOR($Resource.StyleZip, '/css/index.css')}"/>
     <c:NavBar />
+    <main id="landingMain">
+        <h2 id="landingQuote">"Tell me, and I will not forget <br/> show me and I may remember <br/> but involve me, <br/> and I will understand." - Chinese Proverb</h2>
+        <a href="#" class="btn-large">Find a Course</a>
+    </main>
     <apex:includeScript value="{!$Resource.customJavascript}"/>
 </apex:page>
