@@ -1,5 +1,6 @@
 <apex:component layout="none">
 	<aside id="sideBar">
+		<button id="navButton">Menu</button>
 		<nav id="sidebarNav">
 			<a id="navBrand" href="/apex/LandingPage">
 				<apex:image value="{!$Resource.Logo}" />
@@ -23,7 +24,4 @@
 			</ul>
 		</nav>
 	</aside>
-	<button>
-		Menu
-	</button>
 </apex:component>
