@@ -37,6 +37,18 @@
         <name>StaticResource</name>
     </types>
     <types>
+        <members>StyleZip</members>
+        <name>StaticResource</name>
+    </types>
+    <types>
+        <members>customJavascript</members>
+        <name>StaticResource</name>
+    </types>
+    <types>
+        <members>Logo</members>
+        <name>StaticResource</name>
+    </types>
+    <types>
         <members>Account</members>
         <name>CustomObject</name>
     </types>
