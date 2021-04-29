@@ -11,7 +11,7 @@ body {
   position:absolute;
   top: 0;
   left: 0;
-  transform:translate(-100%, 0);
+  transform:translate(-100%,0);
   background: #5D4B6F;
   transition: transform 1.5s cubic-bezier(.59,-0.06,0,1.08)
 }
