@@ -217,6 +217,26 @@
         <name>PermissionSet</name>
     </types>
     <types>
+        <members>Custom-ConDev</members>
+        <name>Profile</name>
+    </types>
+    <types>
+        <members>Custom-Exec</members>
+        <name>Profile</name>
+    </types>
+    <types>
+        <members>Custom-Finance</members>
+        <name>Profile</name>
+    </types>
+    <types>
+        <members>Custom-Recruiter</members>
+        <name>Profile</name>
+    </types>
+    <types>
+        <members>Custom-Tester</members>
+        <name>Profile</name>
+    </types>
+    <types>
         <members>*</members>
         <name>Role</name>
     </types>
