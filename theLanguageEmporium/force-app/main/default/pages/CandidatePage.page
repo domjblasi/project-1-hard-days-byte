@@ -26,7 +26,6 @@
                 </apex:pageBlockSection>
                 <apex:pageBlockSection title="Upload Your Resume" columns="1">
                 	<apex:inputFile value="{!resume.versionData}"/>
-                    <apex:commandButton action="{!upload}" value="Upload"/>
                 </apex:pageBlockSection>
                 <apex:commandButton action="{!positionPage}" value="Previous Page"/>
                 <apex:commandButton action="{!experience}" value="Next Page"/>

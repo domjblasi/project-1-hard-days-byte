@@ -3,12 +3,14 @@ public class RecruitingWizard {
     public Position__c pickedPosition{get; set;}
     public AppWrapper application{get; set;}
     public ContentVersion resume{get; set;}
+    public String message{get; set;}
     
     public RecruitingWizard(){
         positions = new List<Position__c>();
         pickedPosition = null;
         application = new AppWrapper();
         resume = new ContentVersion();
+        message = 'This is not null';
     }
     
     public class AppWrapper {
@@ -21,10 +23,6 @@ public class RecruitingWizard {
         }
     }
     
-    public void upload(){
-        
-        
-    }
     public PageReference recruitingLanding(){
         pickedPosition = null;
         application = new AppWrapper();
