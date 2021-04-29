@@ -1,0 +1,26 @@
+<apex:page sidebar="false" showChat="false" showHeader="false" controller="RecruitingWizard" standardStylesheets="false">
+    <apex:stylesheet value="{!URLFOR($Resource.StyleZip, '/css/index.css')}"/>
+    <main style="{display:flex;}">
+    <section>
+    	<h2>
+            {!pickedPosition.name}
+        </h2>
+        <p>
+         	{!pickedPosition.Description__c}   
+        </p>
+    </section>
+    <section>
+        <apex:pageBlock >
+       		<apex:form >
+                <apex:pageBlockSection columns="1">
+                	<apex:inputField value="{!application.positionCandidate.First_Name__c}"/>
+                	<apex:inputField value="{!application.positionCandidate.Last_Name__c}"/>
+                	<apex:inputField value="{!application.positionCandidate.Email__c}"/>
+                	<apex:commandButton action="{!candidatePage}" value="Apply Now!"/>
+                </apex:pageBlockSection>
+        	</apex:form>
+        </apex:pageBlock>
+    </section>
+    </main>
+    <apex:includeScript value="{!$Resource.customJavascript}"/>
+</apex:page>

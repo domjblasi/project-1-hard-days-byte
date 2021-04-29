@@ -1,0 +1,37 @@
+<apex:page sidebar="false" showChat="false" showHeader="false" controller="RecruitingWizard" standardStylesheets="false">
+	<apex:stylesheet value="{!URLFOR($Resource.StyleZip, '/css/index.css')}"/>
+    <c:NavBar />
+   	<main>
+       	<apex:pageBlock >
+        	<apex:form >
+                <apex:pageBlockSection title="Candidate Details" columns="2">
+                    <apex:pageBlockSection >
+						<apex:inputField value="{!application.positionCandidate.First_Name__c}"/>
+                		<apex:inputField value="{!application.positionCandidate.Last_Name__c}"/>
+                    	<apex:inputField value="{!application.positionCandidate.Phone__c}"/>
+                    	<apex:inputField value="{!application.positionCandidate.Email__c}"/>             	
+                    </apex:pageBlockSection>
+                	<apex:pageBlockSection >
+						<apex:inputField value="{!application.positionCandidate.Street_Address_1__c}"/>
+                    	<apex:inputField value="{!application.positionCandidate.Street_Address_2__c}"/>
+                    	<apex:inputField value="{!application.positionCandidate.State_Province__c}"/>
+                    	<apex:inputField value="{!application.positionCandidate.Country__c}"/>
+                    	<apex:inputField value="{!application.positionCandidate.Zip_Postal_Code__c}"/>
+                    </apex:pageBlockSection>
+        			<apex:pageBlockSection >
+                        <apex:inputField value="{!application.positionCandidate.Education__c}"/>
+                    	<apex:inputField value="{!application.positionCandidate.US_Citizen__c}"/>
+                    	<apex:inputField value="{!application.positionCandidate.Visa_Required__c}"/>
+                    </apex:pageBlockSection>
+                </apex:pageBlockSection>
+                <apex:pageBlockSection title="Upload Your Resume" columns="1">
+                	<apex:inputFile value="{!resume.versionData}"/>
+                    <apex:commandButton action="{!upload}" value="Upload"/>
+                </apex:pageBlockSection>
+                <apex:commandButton action="{!positionPage}" value="Previous Page"/>
+                <apex:commandButton action="{!experience}" value="Next Page"/>
+        	</apex:form>
+        </apex:pageBlock>
+    </main>
+    <apex:includeScript value="{!$Resource.customJavascript}"/>
+</apex:page>
