@@ -4,6 +4,8 @@
     <main id="landingMain">
         <h2 id="landingQuote">"Tell me, and I will not forget <br/> show me and I may remember <br/> but involve me, <br/> and I will understand."</h2>
         <a href="#" class="btn-large">Find a Course</a>
+        <a href="#" class="btn-large">{!$User.contactId}</a>
+     
     </main>
     <apex:includeScript value="{!$Resource.customJavascript}"/>
 </apex:page>
