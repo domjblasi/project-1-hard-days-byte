@@ -1,12 +1,16 @@
 public class learnerExtension {
-    public Contact currentUser{get;set;}
-    public learnerExtension(){
-        currentUser = new Contact();
+    public User currentUser {get;set;}
+    public Contact currentContact{get;set;}
+    public ApexPages.StandardController standardController {get;set;}
+    
+    public learnerExtension(ApexPages.StandardController sc){
+        standardController = sc;
+        currentUser = [select firstname from user where id=:userinfo.getuserid() LIMIT 1];
+        currentContact=[select id, name from Contact WHERE id = :userinfo.getuserid() LIMIT 1];
+		
     }
    
-    public String getFirstName(){
-        return UserInfo.getFirstName();
-    }
+  
 
 
 }
