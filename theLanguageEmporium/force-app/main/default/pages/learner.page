@@ -1,0 +1,41 @@
+<apex:page controller="learnerExtension"   >
+    <apex:form >
+        <!-- ***Put User's Name in title*** ---->
+        <apex:pageBlock title="Welcome!">
+            
+        <!---- Contact Information ---->
+            <apex:pageBlockSection >
+                <h1> Account Information </h1>
+            <h2>   <apex:outputText title="Name: " />  </h2> 
+                <apex:outputText title="Email: "/>
+                <apex:outputText title="Phone: "/>
+                <!--<apex:outputText value="{!Account.Id}"/>-->
+            
+            </apex:pageBlockSection>
+            
+        <!------ Current Courses ------>
+            <apex:pageBlockSection >
+                <h1> Current Enrolled Courses </h1>
+            
+            </apex:pageBlockSection>
+            
+        <!------ Current Lessons------>
+            <apex:pageBlockSection >
+                <h1> Current Enrolled Lessons </h1>
+            </apex:pageBlockSection>
+        <!------ Sessions [Link URL to Page with All Session Information]----->
+            <apex:pageBlockSection >
+                <h1> Sessions </h1>
+            </apex:pageBlockSection>
+        <!------ Last Completed Course --------->
+            <apex:pageBlockSection >
+                <h1> Recent Courses </h1>
+            </apex:pageBlockSection>
+        <!----- Tutors (?) ----------------->
+            <apex:pageBlockSection >
+                <h1> Tutors </h1>
+            </apex:pageBlockSection>
+  
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
