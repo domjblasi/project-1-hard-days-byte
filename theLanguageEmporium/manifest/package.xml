@@ -244,5 +244,14 @@
         <members>*</members>
         <name>Role</name>
     </types>
+   <types>
+        <members>Learner</members>
+        <name>Profile</name>
+    </types>
+   <types>
+        <members>Learner_Manager</members>
+        <name>Role</name>
+    </types>
+
     <version>50.0</version>
 </Package>
