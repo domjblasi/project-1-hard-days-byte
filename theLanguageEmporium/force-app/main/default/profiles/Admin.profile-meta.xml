@@ -744,6 +744,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Position__c.Date_Openend__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Position__c.Description__c</field>
         <readable>true</readable>
@@ -1090,6 +1095,10 @@
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
+        <apexPage>CandidateQuestions</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>ChangePassword</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
@@ -1115,6 +1124,10 @@
     </pageAccesses>
     <pageAccesses>
         <apexPage>ContactView</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+        <apexPage>Demographic</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>

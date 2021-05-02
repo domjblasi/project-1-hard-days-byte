@@ -2,9 +2,12 @@
     <apex:stylesheet value="{!URLFOR($Resource.StyleZip, '/css/index.css')}"/>
     <apex:pageBlock >
     	<apex:form >
+            <!--- Education Section --->
             <apex:pageBlockSection title="Education">
+                <!--- Create index variable --->
                 <apex:variable var="index" value="1"/>
             	<apex:repeat value="{!education}" var="ed">
+                    <!--- Title sub-section with index --->
             		<apex:pageBlockSection title="{!'Education #' + index}">
                     	<apex:inputField value="{!ed.School__c}"/>
                 		<apex:inputField value="{!ed.Degree__c}"/>
@@ -13,12 +16,43 @@
                 		<apex:inputField value="{!ed.Date_Of_Graduation__c}"/>
                 		<apex:inputField value="{!ed.Graduated__c}"/>
                     </apex:pageBlockSection>
+                    <!--- Adjust index variable --->
+                    <apex:variable var="index" value="{!VALUE(index) + 1}"/>
+    			</apex:repeat>                
+            </apex:pageBlockSection>
+        </apex:form>
+        <apex:form >
+        	<apex:commandButton action="{!addEd}" value="Add Education" />
+            <apex:commandButton action="{!remEd}" value="Remove Education" />
+       	</apex:form>
+        <apex:form >
+            <!--- Experience Section --->
+            <apex:pageBlockSection title="Work Experience">
+                <apex:variable var="index" value="1"/>
+            	<apex:repeat value="{!experience}" var="exp">
+            		<!--- Create index variable --->
+                    <apex:pageBlockSection title="{!'Experience #' + index}">
+                    	<apex:inputField value="{!exp.Company_Name__c}"/>
+                		<apex:inputField value="{!exp.Company_Phone__c}"/>
+                		<apex:inputField value="{!exp.Address__c}"/>
+                		<apex:inputField value="{!exp.Reported_To__c}"/>
+                		<apex:inputField value="{!exp.Start_Date__c}"/>
+                		<apex:inputField value="{!exp.End_Date__c}"/>
+                        <apex:inputField value="{!exp.Description__c}"/>
+                    </apex:pageBlockSection>
+            		<!--- Adjust index variable --->
                     <apex:variable var="index" value="{!VALUE(index) + 1}"/>
     			</apex:repeat>                
             </apex:pageBlockSection>
     	</apex:form>
         <apex:form >
-        	<apex:commandButton action="{!addEd}" value="Add Education" />
+        	<apex:commandButton action="{!addExp}" value="Add Experience" />
+            <apex:commandButton action="{!remExp}" value="Remove Experience" />
+        </apex:form>
+        
+        <apex:form >
+       		<apex:commandButton action="{!candidatePage}" immediate="true" value="Previous Page"/>
+            <apex:commandButton action="{!candidateQuestions}" value="Next Page"/> 
         </apex:form>
     </apex:pageBlock>	
    		

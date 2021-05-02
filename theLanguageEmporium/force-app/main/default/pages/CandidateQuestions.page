@@ -1,0 +1,21 @@
+<apex:page sidebar="false" showChat="false" showHeader="false" controller="RecruitingWizard" standardStylesheets="false">
+	<apex:stylesheet value="{!URLFOR($Resource.StyleZip, '/css/index.css')}"/>
+   	<apex:pageBlock title="Questions">
+    	<p>
+            Please answer these questions truthfully and to the best of your ability
+        </p>
+       	<apex:form >
+        	<apex:repeat value="{!answerWrappers}" var="answer">
+                <apex:pageBlockSection >
+	                <apex:outputText label="" value="{!answer.question.Question__c}"/>
+                    <br/>
+    	            <apex:inputField label="" value="{!answer.answer.Answer__c}"/>                
+                </apex:pageBlockSection>
+            </apex:repeat>
+        </apex:form>
+     	<apex:form >
+                <apex:commandButton action="{!experience}" immediate="true" value="Previous Page"/>
+            	<apex:commandButton action="{!demographic}" value="Next Page"/>
+        </apex:form>
+    </apex:pageBlock>
+</apex:page>
