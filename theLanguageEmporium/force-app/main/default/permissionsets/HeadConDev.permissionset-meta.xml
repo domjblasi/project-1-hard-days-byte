@@ -582,11 +582,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Position__c.Date_Openend__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Position__c.Description__c</field>
         <readable>false</readable>
     </fieldPermissions>

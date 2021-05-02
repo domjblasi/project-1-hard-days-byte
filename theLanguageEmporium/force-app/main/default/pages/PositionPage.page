@@ -6,16 +6,22 @@
             {!pickedPosition.name}
         </h2>
         <p>
-         	{!pickedPosition.Description__c}   
+            <Apex:OutputField value="{!pickedPosition.Description__c}"/>
+            <br/>
+            <br/>
+            If nobody spoke a different language, there wouldn't be much need for The Language Emporium.
+            As such, The Language Emporium is an Equal Opportunity Employer that celebrates everybody of different cultures,
+			backgrounds, races, sexualities, genders, disabilities and all the people the world has to offer in an effort 
+			to engage our learners with as much diversity of thought and language that the world itself provides. 
         </p>
     </section>
     <section>
         <apex:pageBlock >
        		<apex:form >
                 <apex:pageBlockSection columns="1">
-                	<apex:inputField value="{!application.positionCandidate.First_Name__c}"/>
-                	<apex:inputField value="{!application.positionCandidate.Last_Name__c}"/>
-                	<apex:inputField value="{!application.positionCandidate.Email__c}"/>
+                	<apex:inputField value="{!positionCandidate.First_Name__c}"/>
+                    <apex:inputField value="{!positionCandidate.Last_Name__c}"/>
+                	<apex:inputField value="{!positionCandidate.Email__c}"/>
                 	<apex:commandButton action="{!candidatePage}" value="Apply Now!"/>
                 </apex:pageBlockSection>
         	</apex:form>

@@ -1,5 +1,27 @@
 <apex:page sidebar="false" showChat="false" showHeader="false" controller="RecruitingWizard" standardStylesheets="false">
     <apex:stylesheet value="{!URLFOR($Resource.StyleZip, '/css/index.css')}"/>
-    
+    <apex:pageBlock >
+    	<apex:form >
+            <apex:pageBlockSection title="Education">
+                <apex:variable var="index" value="1"/>
+            	<apex:repeat value="{!education}" var="ed">
+            		<apex:pageBlockSection title="{!'Education #' + index}">
+                    	<apex:inputField value="{!ed.School__c}"/>
+                		<apex:inputField value="{!ed.Degree__c}"/>
+                		<apex:inputField value="{!ed.Major__c}"/>
+                		<apex:inputField value="{!ed.Date_Started__c}"/>
+                		<apex:inputField value="{!ed.Date_Of_Graduation__c}"/>
+                		<apex:inputField value="{!ed.Graduated__c}"/>
+                    </apex:pageBlockSection>
+                    <apex:variable var="index" value="{!VALUE(index) + 1}"/>
+    			</apex:repeat>                
+            </apex:pageBlockSection>
+    	</apex:form>
+        <apex:form >
+        	<apex:commandButton action="{!addEd}" value="Add Education" />
+        </apex:form>
+    </apex:pageBlock>	
+   		
+    	
     <apex:includeScript value="{!$Resource.customJavascript}"/>
 </apex:page>

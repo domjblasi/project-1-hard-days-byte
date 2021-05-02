@@ -6,22 +6,22 @@
         	<apex:form >
                 <apex:pageBlockSection title="Candidate Details" columns="2">
                     <apex:pageBlockSection >
-						<apex:inputField value="{!application.positionCandidate.First_Name__c}"/>
-                		<apex:inputField value="{!application.positionCandidate.Last_Name__c}"/>
-                    	<apex:inputField value="{!application.positionCandidate.Phone__c}"/>
-                    	<apex:inputField value="{!application.positionCandidate.Email__c}"/>             	
+						<apex:inputField value="{!positionCandidate.First_Name__c}"/>
+                		<apex:inputField value="{!positionCandidate.Last_Name__c}"/>
+                    	<apex:inputField value="{!positionCandidate.Phone__c}"/>
+                    	<apex:inputField value="{!positionCandidate.Email__c}"/>             	
                     </apex:pageBlockSection>
                 	<apex:pageBlockSection >
-						<apex:inputField value="{!application.positionCandidate.Street_Address_1__c}"/>
-                    	<apex:inputField value="{!application.positionCandidate.Street_Address_2__c}"/>
-                    	<apex:inputField value="{!application.positionCandidate.State_Province__c}"/>
-                    	<apex:inputField value="{!application.positionCandidate.Country__c}"/>
-                    	<apex:inputField value="{!application.positionCandidate.Zip_Postal_Code__c}"/>
+						<apex:inputField value="{!positionCandidate.Street_Address_1__c}"/>
+                    	<apex:inputField value="{!positionCandidate.Street_Address_2__c}"/>
+                    	<apex:inputField value="{!positionCandidate.State_Province__c}"/>
+                    	<apex:inputField value="{!positionCandidate.Country__c}"/>
+                    	<apex:inputField value="{!positionCandidate.Zip_Postal_Code__c}"/>
                     </apex:pageBlockSection>
         			<apex:pageBlockSection >
-                        <apex:inputField value="{!application.positionCandidate.Education__c}"/>
-                    	<apex:inputField value="{!application.positionCandidate.US_Citizen__c}"/>
-                    	<apex:inputField value="{!application.positionCandidate.Visa_Required__c}"/>
+                        <apex:inputField value="{!positionCandidate.Education__c}"/>
+                    	<apex:inputField value="{!positionCandidate.US_Citizen__c}"/>
+                    	<apex:inputField value="{!positionCandidate.Visa_Required__c}"/>
                     </apex:pageBlockSection>
                 </apex:pageBlockSection>
                 <apex:pageBlockSection title="Upload Your Resume" columns="1">

@@ -3,13 +3,13 @@
     <c:NavBar />
     <main>
     	<section>
-           	<apex:form >
-				<apex:repeat value="{!positions}" var="position">
-                	<apex:commandLink action="{!positionPage}" value="{!position.Name}">
-                		<apex:param name="position" assignTo="{!pickedPosition}" value="{!position}"/>
-               		</apex:commandLink>
-            	</apex:repeat>
-           	</apex:form>
+                		<apex:repeat value="{!positions}" var="position">
+                            <apex:form >
+                                <apex:commandLink action="{!positionPage}" value="{!position.Name}">
+                                    <apex:param name="position" assignTo="{!pickedPositionId}" value="{!position.id}"/>
+                                </apex:commandLink>
+                            </apex:form>
+            			</apex:repeat>
         </section>
         <section>
         	<h2>
