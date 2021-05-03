@@ -217,36 +217,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Candidate_Answer__c.Answer__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Candidate_Education__c.Date_Of_Graduation__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Candidate_Education__c.Graduated__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Candidate_Education__c.Major__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Candidate_Experience__c.Company_Phone__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Candidate_Experience__c.Description__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Candidate__c.Country__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -332,16 +302,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Contact.Active__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Contact.Assigned_Tutor__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Contact.AssistantName</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -358,21 +318,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Contact.CleanStatus</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Contact.Course_Completion__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Contact.Current_Course__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Contact.Current_Lesson__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -417,17 +362,12 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Contact.Is_Tutor__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Contact.Jigsaw</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Contact.Last_Completed_Course__c</field>
+        <field>Contact.Languages__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -437,12 +377,7 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Contact.Learner_Rank__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Contact.Learner_Since__c</field>
+        <field>Contact.Level__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -703,11 +638,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Order.Description</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Order.Learner__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>

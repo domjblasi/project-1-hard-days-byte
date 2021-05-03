@@ -17,7 +17,7 @@
                 </p>
                 <apex:inputCheckbox Label="Acknowledge/Agree" required="true"/>
             </apex:pageBlockSection>
-            <apex:commandButton action="{!experience}" immediate="true" value="Previous Page"/>
+            <apex:commandButton action="{!candidateQuestions}" immediate="true" value="Previous Page"/>
             <apex:commandButton action="{!review}" value="Next Page"/> 
         </apex:form>
     </apex:pageBlock>

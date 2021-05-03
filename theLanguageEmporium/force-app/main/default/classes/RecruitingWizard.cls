@@ -6,7 +6,10 @@ public class RecruitingWizard {
     public Candidate__c positionCandidate{get; set;}
     public List<Candidate_Experience__c> experience{get; set;}
     public List<Candidate_Education__c> education{get; set;}
+    
+    @testVisible
     private List<Candidate_Answer__c> answers{get; set;}
+    
     public List<AnswerWrapper> AnswerWrappers{get; set;}
     public Position_Demographic__c positionDem{get; set;}
     

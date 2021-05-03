@@ -2,7 +2,7 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Learner_Since__c</fullName>
     <externalId>false</externalId>
-    <formula>DATEVALUE(CreatedDate)</formula>
+    <formula>Tutor_Account__r.Learner_Since__c</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>Learner Since</label>
     <required>false</required>

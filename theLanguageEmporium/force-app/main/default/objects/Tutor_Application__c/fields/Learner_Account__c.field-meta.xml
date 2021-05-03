@@ -3,7 +3,7 @@
     <fullName>Learner_Account__c</fullName>
     <externalId>false</externalId>
     <label>Learner Account</label>
-    <referenceTo>Contact</referenceTo>
+    <referenceTo>Account</referenceTo>
     <relationshipLabel>Tutor Applications</relationshipLabel>
     <relationshipName>Tutor_Applications</relationshipName>
     <relationshipOrder>0</relationshipOrder>

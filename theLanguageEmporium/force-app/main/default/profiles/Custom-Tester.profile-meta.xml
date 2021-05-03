@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Profile xmlns="http://soap.sforce.com/2006/04/metadata">
-<<<<<<< HEAD
     <applicationVisibilities>
         <application>Content_Development</application>
         <default>false</default>
@@ -167,8 +166,6 @@
         <apexClass>hello</apexClass>
         <enabled>false</enabled>
     </classAccesses>
-=======
->>>>>>> 74df5805dda9c7a02e005e09f4dc4111a58bc3f7
     <custom>true</custom>
     <fieldPermissions>
         <editable>true</editable>
@@ -387,36 +384,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>Candidate_Answer__c.Answer__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Candidate_Education__c.Date_Of_Graduation__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Candidate_Education__c.Graduated__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Candidate_Education__c.Major__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Candidate_Experience__c.Company_Phone__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Candidate_Experience__c.Description__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>Candidate__c.Country__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -502,16 +469,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contact.Active__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Contact.Assigned_Tutor__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Contact.AssistantName</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -529,21 +486,6 @@
         <editable>false</editable>
         <field>Contact.CleanStatus</field>
         <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Contact.Course_Completion__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Contact.Current_Course__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Contact.Current_Lesson__c</field>
-        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -587,18 +529,13 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Contact.Is_Tutor__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Contact.Jigsaw</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Contact.Last_Completed_Course__c</field>
-        <readable>false</readable>
+        <editable>true</editable>
+        <field>Contact.Languages__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -606,14 +543,9 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Contact.Learner_Rank__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Contact.Learner_Since__c</field>
-        <readable>false</readable>
+        <editable>true</editable>
+        <field>Contact.Level__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -873,11 +805,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Order.Description</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Order.Learner__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -1158,7 +1085,7 @@
         <recordType>Lesson__c.Lesson</recordType>
     </layoutAssignments>
     <layoutAssignments>
-        <layout>Lesson__c-Tutoring Layout</layout>
+        <layout>Lesson__c-Lesson Layout</layout>
         <recordType>Lesson__c.Tutoring</recordType>
     </layoutAssignments>
     <layoutAssignments>
@@ -1166,10 +1093,6 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Offer__c-Offer Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Order-Lesson Order Layout</layout>
-        <recordType>Order.Lesson_Order</recordType>
     </layoutAssignments>
     <layoutAssignments>
         <layout>Position__c-Position Layout</layout>
@@ -1479,6 +1402,46 @@
         <recordType>Product2.Dynamic_Product</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
+    <tabVisibilities>
+        <tab>Candidate__c</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Course_Developer__c</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Course__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Development_Team__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Job_Application__c</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Lesson__c</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Position__c</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>QA_Review__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Tutor_Application__c</tab>
+        <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Tutor__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
     <tabVisibilities>
         <tab>standard-Account</tab>
         <visibility>DefaultOn</visibility>

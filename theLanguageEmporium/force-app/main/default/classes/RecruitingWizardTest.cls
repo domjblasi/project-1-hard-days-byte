@@ -49,4 +49,74 @@ public class RecruitingWizardTest {
         System.assertEquals('/apex/recruitinglanding', nextPage);
         
     }
+    
+    @isTest
+    public static void positionPageReturnsCorrectPage(){
+        Position__c pickedPosition = new Position__c(Name='ContentDev', Course_Dev_Team__c = 'Japanese');
+        insert pickedPosition;
+        
+        PageReference pr = Page.RecruitingLanding;
+        
+        Test.setCurrentPage(pr);
+        
+        pr.getParameters().put('position', pickedPosition.id);        
+        
+        RecruitingWizard controller = new RecruitingWizard();
+       	
+        String nextPage = controller.positionPage().getURL();
+        
+        System.assertEquals('/apex/positionpage', nextPage);
+        System.assertEquals(controller.pickedPosition.id, pickedPosition.id);
+        
+    }
+    
+    @isTest
+    public static void returnCandidatePage(){
+        PageReference pr = Page.PositionPage;
+        Test.setCurrentPage(pr);
+        
+        RecruitingWizard controller = new RecruitingWizard();
+        String nextPage = controller.candidatePage().getURL();
+        
+        System.assertEquals('/apex/candidatepage', nextPage);
+        
+    }
+    
+    @isTest
+    public static void returnExperience(){
+        PageReference pr = Page.candidatePage;
+        Test.setCurrentPage(pr);
+        
+        RecruitingWizard controller = new RecruitingWizard();
+        String nextPage = controller.experience().getURL();
+        
+        System.assertEquals('/apex/experience', nextPage);
+    }
+    
+    @isTest
+    public static void returnCandidateQuestions(){
+        Position__c pickedPosition = new Position__c(Name='ContentDev', Course_Dev_Team__c = 'Japanese');
+        insert pickedPosition;
+        
+        List<Position_Question__C>questions = new List<Position_Question__c>();
+        
+        for(Integer i = 0; i < 3; i++){
+            Position_Question__c newQuestion = new Position_Question__c(Position__C=pickedPosition.id, question__c='test');
+        }
+        
+        insert questions;
+        
+        pickedPosition = [SELECT Name, Description__c, Course_Dev_Team__c, Type__c, (SELECT Question__c FROM Position_Questions__r) from Position__c Where id = :pickedPosition.Id];
+        PageReference pr = Page.experience;
+        Test.setCurrentPage(pr);
+       
+        RecruitingWizard controller = new RecruitingWizard();
+        String nextPage = controller.candidateQuestions().getURL();
+        
+        System.assertEquals('/apex/candidatequestions', nextPage);
+        System.assertEquals(3, controller.answers.size());
+        System.assertEquals(3, controller.answerWrappers.size());
+    }
+    
+    
 }
