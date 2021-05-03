@@ -2,23 +2,27 @@
     <apex:stylesheet value="{!URLFor($Resource.StyleZip, 'css/index.css')}"/>
     <c:NavBar />
     <main>
-    	<section>
-                		<apex:repeat value="{!positions}" var="position">
-                            <apex:form >
-                                <apex:commandLink action="{!positionPage}" value="{!position.Name}">
-                                    <apex:param name="position" assignTo="{!pickedPositionId}" value="{!position.id}"/>
-                                </apex:commandLink>
-                            </apex:form>
-            			</apex:repeat>
-        </section>
-        <section>
-        	<h2>
-          		You never know where language can take you.
-            </h2>
-            <p>
-                Embolden your career with a position at The Language Emporium and Learn from our team members all over the world!
-            </p>
-        </section>
+    	<apex:pageBlock >
+            <apex:pageBlockSection columns="2">
+            	 <apex:pageBlockSection title="Positions">
+                	<apex:repeat value="{!positions}" var="position">
+                        <apex:form >
+                            <apex:commandLink action="{!positionPage}" value="{!position.Name}">
+                            	<apex:param name="position" assignTo="{!pickedPositionId}" value="{!position.id}"/>
+                        	</apex:commandLink>
+                    	</apex:form>
+            		</apex:repeat>
+            	</apex:pageBlockSection>
+        		<apex:pageBlockSection >
+            		<h2>
+          				You never know where language can take you.
+            		</h2>
+            		<p>
+                		Embolden your career with a position at The Language Emporium and Learn from our team members all over the world!
+            		</p>
+            	</apex:pageBlockSection>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
     </main>
     <apex:includeScript value="{!$Resource.customJavascript}"/>
 </apex:page>

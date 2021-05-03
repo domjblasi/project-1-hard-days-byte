@@ -131,6 +131,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>RecruitingWizardTest</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>SiteLoginController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -791,11 +795,6 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>Position__c.Date_Opened__c</field>
-        <readable>false</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
-        <field>Position__c.Date_Openend__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>

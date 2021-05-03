@@ -1,5 +1,5 @@
 <apex:component layout="none">
-	<aside id="sideBar">
+	<aside id="sideBar" class="slds-scope">
 		<button id="navButton">Menu</button>
 		<nav id="sidebarNav">
 			<a id="navBrand" href="/apex/LandingPage">
@@ -7,7 +7,7 @@
 			</a>
 			<ul class="navigation">
 				<li class="navlink">
-					<a href="/apex/LandingPage">Home</a>
+                    <a href="/apex/LandingPage">Home</a>
 				</li>
 				<li class="navlink">
 					<a href="/apex/store">Store</a>
@@ -19,7 +19,7 @@
 					<a href="/apex/leaderboard">Leaderboard</a>
 				</li>
 				<li class="navlink">
-					<a href="/apex/jobs">Jobs</a>
+					<a href="/apex/recruitingLanding">Jobs</a>
 				</li>
 			</ul>
 		</nav>

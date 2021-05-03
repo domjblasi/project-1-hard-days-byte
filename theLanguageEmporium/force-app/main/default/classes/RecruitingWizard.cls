@@ -29,8 +29,6 @@ public class RecruitingWizard {
     }
     public PageReference recruitingLanding(){
         pickedPosition = null;
-        candidateApplication = null;
-        positionCandidate = null;
         return Page.RecruitingLanding;
     }
 
