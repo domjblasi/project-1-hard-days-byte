@@ -1,0 +1,18 @@
+<apex:page standardController="Session__c">
+    <apex:form>
+        <apex:pageBlock title = "Session Enrollment">
+            <apex:pageBlockSection>
+                <apex:inputField value ="{!Session__c.name}"> </apex:inputField> <br/>
+                <apex:inputField value ="{!Session__c.learner__c}"> </apex:inputField> <br/>
+                <apex:inputField value ="{!Session__c.tutor__c}"> </apex:inputField>  <br/>
+                <apex:inputField value ="{!Session__c.duration__c}"> </apex:inputField>  <br/>
+                <apex:inputField value ="{!Session__c.language__c}"> </apex:inputField> <br/>
+                
+            
+            </apex:pageBlockSection>
+            <apex:commandButton value ="Book Session" action ="{!save}"/>
+            
+        </apex:pageBlock>
+    
+    </apex:form>
+</apex:page>
