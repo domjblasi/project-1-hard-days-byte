@@ -197,6 +197,14 @@
         <name>Layout</name>
     </types>
     <types>
+        <members>QA_Testers_Queue</members>
+        <name>Queue</name>
+    </types>
+    <types>
+        <members>Recruiting_Queue</members>
+        <name>Queue</name>
+    </types>
+    <types>
         <members>Product2Family</members>
         <name>StandardValueSet</name>
     </types>
