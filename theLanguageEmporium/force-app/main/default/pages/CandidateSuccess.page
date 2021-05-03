@@ -1,0 +1,5 @@
+<apex:page >
+    <h2>
+        SUCCESS!!!
+    </h2>
+</apex:page>

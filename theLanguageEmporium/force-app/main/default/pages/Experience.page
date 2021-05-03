@@ -3,7 +3,7 @@
     <apex:pageBlock >
     	<apex:form >
             <!--- Education Section --->
-            <apex:pageBlockSection title="Education">
+            <apex:pageBlockSection id="education" title="Education" columns="1">
                 <!--- Create index variable --->
                 <apex:variable var="index" value="1"/>
             	<apex:repeat value="{!education}" var="ed">
@@ -18,16 +18,14 @@
                     </apex:pageBlockSection>
                     <!--- Adjust index variable --->
                     <apex:variable var="index" value="{!VALUE(index) + 1}"/>
-    			</apex:repeat>                
+    			</apex:repeat>      
+                <apex:pageBlockSection >
+                	<apex:commandButton action="{!addEd}" reRender="education" immediate="true" value="Add Education" />
+            		<apex:commandButton action="{!remEd}" reRender="education" immediate="true" value="Remove Education" />
+                </apex:pageBlockSection>
             </apex:pageBlockSection>
-        </apex:form>
-        <apex:form >
-        	<apex:commandButton action="{!addEd}" value="Add Education" />
-            <apex:commandButton action="{!remEd}" value="Remove Education" />
-       	</apex:form>
-        <apex:form >
             <!--- Experience Section --->
-            <apex:pageBlockSection title="Work Experience">
+            <apex:pageBlockSection id="experience" title="Work Experience" columns="1">
                 <apex:variable var="index" value="1"/>
             	<apex:repeat value="{!experience}" var="exp">
             		<!--- Create index variable --->
@@ -42,20 +40,15 @@
                     </apex:pageBlockSection>
             		<!--- Adjust index variable --->
                     <apex:variable var="index" value="{!VALUE(index) + 1}"/>
-    			</apex:repeat>                
+    			</apex:repeat>
+                <apex:pageBlockSection >
+                	<apex:commandButton action="{!addExp}" reRender="experience" immediate="true" value="Add Experience" />
+            		<apex:commandButton action="{!remExp}" reRender="experience" immediate="true" value="Remove Experience" />
+                </apex:pageBlockSection>
             </apex:pageBlockSection>
-    	</apex:form>
-        <apex:form >
-        	<apex:commandButton action="{!addExp}" value="Add Experience" />
-            <apex:commandButton action="{!remExp}" value="Remove Experience" />
-        </apex:form>
-        
-        <apex:form >
-       		<apex:commandButton action="{!candidatePage}" immediate="true" value="Previous Page"/>
+            <apex:commandButton action="{!candidatePage}" immediate="true" value="Previous Page"/>
             <apex:commandButton action="{!candidateQuestions}" value="Next Page"/> 
-        </apex:form>
+    	</apex:form>
     </apex:pageBlock>	
-   		
-    	
     <apex:includeScript value="{!$Resource.customJavascript}"/>
 </apex:page>

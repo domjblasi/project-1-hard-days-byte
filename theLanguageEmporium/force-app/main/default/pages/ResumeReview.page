@@ -22,9 +22,7 @@
                 <apex:inputField required="true" value="{!positionCandidate.US_Citizen__c}"/>
                 <apex:inputField value="{!positionCandidate.Visa_Required__c}"/>
            	</apex:pageBlockSection>
-        </apex:pageBlockSection>
-        <apex:pageBlockSection title="Uploaded Resume">
-            <apex:inputFile value="{!resume.body}"/>
+            <apex:commandButton value="Edit Candidate Information" action="{!candidatePage}"/>
         </apex:pageBlockSection>
         <apex:pageBlockSection title="Education and Experience" columns="1">
 			 <apex:pageBlockSection title="Education">
@@ -61,6 +59,7 @@
                     <apex:variable var="index" value="{!VALUE(index) + 1}"/>
     			</apex:repeat>                
             </apex:pageBlockSection>
+            <apex:commandButton action="{!experience}" value="Edit Education and Experience"/>
          </apex:pageBlockSection>
          <apex:pageBlockSection title="Position Questions">
          	<apex:repeat value="{!answerWrappers}" var="answer">
@@ -70,13 +69,17 @@
     	            <apex:inputField label="" value="{!answer.answer.Answer__c}"/>                
                 </apex:pageBlockSection>
             </apex:repeat>
+            <apex:commandButton value="Edit Position Questions" action="{!candidateQuestions}"/>
         </apex:pageBlockSection>
        	<apex:pageBlockSection title="Demographic Information">
                 <apex:inputField label="What is your Gender?" value="{!positionDem.Gender__c}"/>
 	            <apex:inputField label="How do you describe your ethnicity?" value="{!positionDem.Ethnicity__c}"/>
     	        <apex:inputField label="Are you a veteran?" value="{!positionDem.Veteran_Status__c}"/>
         	    <apex:inputField label="Do you have a disability?" value="{!positionDem.Disability__c}"/>
+        		<apex:commandButton action="{!demographic}" value="Edit Demographic Information"/>
         </apex:pageBlockSection>
+        <apex:commandButton action="{!demographic}" value="Previous Page"/>
+        <apex:commandButton action="{!submit}" value="Submit"/>
     	</apex:form>
 	</apex:PageBlock>
 </apex:page>
