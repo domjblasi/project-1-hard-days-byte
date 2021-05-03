@@ -1,0 +1,43 @@
+<apex:page sidebar="false" showHeader="false">
+    <apex:slds />
+    <apex:stylesheet value="{!URLFOR($Resource.StyleZip, '/css/index.css')}" />
+    <c:NavBar />
+    
+    <main id="quizMain" style="margin-left:auto;margin-right:auto;width:75%;">
+        <h1 id="leadIntroHeader" style="font-size:26px;text-align:center;font-weight:bold;">QUIZ RESULTS</h1><br />
+        <div class="slds-scope">
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_2-of-12">
+                </div>
+                <div class="slds-col slds-size_8-of-12">
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_3-of-12">
+                            <b>Correct:</b><br />
+                            <b>Incorrect:</b><br />
+                            <b>Final Score:</b><br />
+                            <br />
+                            <b>Total Score:</b><br />
+                            <b>Previous Rank:</b><br />
+                            <b>New Rank:</b>
+                        </div>
+                        <div class="slds-col slds-size_2-of-12 results" style="text-align:center;">
+                            <b>21</b><br />
+                            <b>4</b><br />
+                            <b>84%</b><br />
+                            <br />
+                            <b>212,600</b><br />
+                            <b>4</b><br />
+                            <b>↑2</b>
+                        </div>
+                        <div class="slds-col slds-size_7-of-12">
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-col slds-size_2-of-12">
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    <apex:includeScript value="{!$Resource.customJavascript}"/>
+</apex:page>

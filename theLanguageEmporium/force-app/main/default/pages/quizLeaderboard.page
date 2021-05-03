@@ -1,0 +1,68 @@
+<apex:page sidebar="false" showHeader="false">
+    <apex:slds />
+    <apex:stylesheet value="{!URLFOR($Resource.StyleZip, '/css/index.css')}" />
+    <c:NavBar />
+    <main id="quizMain" style="margin-left:auto;margin-right:auto;width:75%;">
+        <h1 id="leadIntroHeader" style="font-size:26px;text-align:center;font-weight:bold;">QUIZ RESULTS</h1><br />
+        <div class="slds-scope">
+            <div class="slds-grid slds-gutters">
+                <div class="slds-col slds-size_2-of-12">
+                </div>
+                <div class="slds-col slds-size_8-of-12">
+                    <div class="slds-grid slds-gutters">
+                        <div class="slds-col slds-size_3-of-12 results" style="text-align:center;">
+                            <h2 class="quizHeader" style="font-size:18px;font-weight:bold;">RANK</h2>
+                            1<br />
+                            2<br />
+                            3<br />
+                            4<br />
+                            5<br />
+                            6<br />
+                            7<br />
+                            8
+                        </div>
+                        <div class="slds-col slds-size_5-of-12 results" style="text-align:center;">
+                            <h2 class="quizHeader" style="font-size:18px;font-weight:bold;">USER</h2>
+                            jonnie_z<br />
+                            iluvlernguages<br />
+                            applesauce_whisperer<br />
+                            sprak_der_lieb<br />
+                            fyrtio-sju<br />
+                            gaikotsu_hondasan<br />
+                            3sp3r4nt0_suxx<br />
+                            frenchay_ay_lay
+                        </div>
+                        <div class="slds-col slds-size_4-of-12 results" style="text-align:center;">
+                            <h2 class="quizHeader" style="font-size:18px;font-weight:bold;">SCORE</h2>
+                            9,999,999<br />
+                            212,600<br />
+                            200,500<br />
+                            199,990<br />
+                            147,471<br />
+                            135,254<br />
+                            123,456<br />
+                            100,000
+                        </div>
+                    </div>
+                    <div class="slds-grid slds-gutters" style="margin-top:25px;">
+                        <div class="slds-col slds-size_3-of-12 results" style="text-align:center;">
+                            <b>Current rank:</b>
+                        </div>
+                        <div class="slds-col slds-size_4-of-12 results" style="text-align:center;">
+                            iluvlernguages
+                        </div>
+                        <div class="slds-col slds-size_1-of-12 results" style="text-align:center;">
+                            <b>2</b>
+                        </div>
+                        <div class="slds-col slds-size_4-of-12 results" style="text-align:center;">
+                            212,600
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-col slds-size_2-of-12">
+                </div>
+            </div>
+        </div>
+    </main>
+    <apex:includeScript value="{!$Resource.customJavascript}"/>
+</apex:page>
