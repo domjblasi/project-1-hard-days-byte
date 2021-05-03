@@ -1,4 +1,4 @@
-<apex:page standardController= "Account"  extensions="learnerExtension"  >
+<apex:page standardController="Account"  extensions="learnerExtension"  >
     <apex:form >
         <!-- ***Put User's Name in title*** ---->
         <apex:pageBlock title="Welcome!">
@@ -9,27 +9,27 @@
                 <p> Name:</p>
                 <p> Email:</p>
                 <p> Phone:</p>
-             	<apex:outputText title = "Name: " />  
-                <apex:outputText title = "Email: "/>
-                <apex:outputText title = "Phone: "/>
+             	<apex:outputText title="Name: " />  
+                <apex:outputText title="Email: "/>
+                <apex:outputText title="Phone: "/>
                 <!--<apex:outputText value="{!Account.Id}"/>-->
             
             </apex:pageBlockSection>
             
         <!------ Current Courses ------>
-            <apex:pageBlockSection>
+            <apex:pageBlockSection >
                 <h1> Current Enrolled Courses </h1>
                 <p> Course Name:</p>
             </apex:pageBlockSection>
             
         <!------ Current Lessons------>
-            <apex:pageBlockSection>
+            <apex:pageBlockSection >
                 <h1> Current Enrolled Lessons </h1>
                 <p> Lesson Name: </p>
                 <p> Course:</p>
             </apex:pageBlockSection>
         <!------ Sessions [Link URL to Page with All Session Information]----->
-            <apex:pageBlockSection>
+            <apex:pageBlockSection >
                 <h1> Sessions </h1>
                 <p> Session ID:</p>
                 <p> Tutor:</p>
@@ -38,14 +38,14 @@
                 
             </apex:pageBlockSection>
         <!------ Last Completed Course --------->
-            <apex:pageBlockSection>
+            <apex:pageBlockSection >
                 <h1> Recent Courses </h1>
             </apex:pageBlockSection>
         <!----- Tutors (?) ----------------->
-            <apex:pageBlockSection>
+            <apex:pageBlockSection >
                 <h1> Tutors </h1>
-                <apex:pageBlockTable value = "{!currentUser}" var = "tutor">
-                <apex:column title="Tutor Name:" value = "{!id}"/>
+                <apex:pageBlockTable value="{!currentUser}" var="tutor">
+                <apex:column title="Tutor Name:" value="{!id}"/>
                 </apex:pageBlockTable>
             </apex:pageBlockSection>
         <!----- Orders (?) ----------------->
