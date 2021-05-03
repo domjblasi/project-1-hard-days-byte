@@ -61,6 +61,10 @@
         <name>CustomObject</name>
     </types>
     <types>
+        <members>Contact</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
         <members>Course__c</members>
         <name>CustomObject</name>
     </types>
@@ -119,6 +123,86 @@
     <types>
         <members>Tutor_Application__c</members>
         <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Candidate__c-Candidate Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Contact-Contact Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Course__c-Course Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Course_Developer__c-Course Developer Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Development_Team__c-Development Team Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Job_Application__c-Job Application Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Learner_Access__c-Learner Access Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Lesson__c-Lesson Layout</members>
+        <name>Layout</name>
+    </types>
+	<types>
+        <members>Lesson__c-Tutoring Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Line_Item__c-Line Item Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Offer__c-Offer Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Order-Lesson Order Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Position__c-Position Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Product2-Product Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>QA_Review__c-QA Review Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Session__c-Session Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Tutor__c-Tutor Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Tutor_Application__c-Tutor Application Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>QA_Testers_Queue</members>
+        <name>Queue</name>
+    </types>
+    <types>
+        <members>Recruiting_Queue</members>
+        <name>Queue</name>
     </types>
     <types>
         <members>Product2Family</members>
