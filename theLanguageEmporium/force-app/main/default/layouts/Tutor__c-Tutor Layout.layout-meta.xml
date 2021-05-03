@@ -8,6 +8,10 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Required</behavior>
+                <field>Learner_Account__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
                 <field>Email__c</field>
             </layoutItems>
             <layoutItems>
@@ -53,6 +57,7 @@
     <miniLayout>
         <fields>Email__c</fields>
         <fields>Qualifications__c</fields>
+        <fields>Learner_Account__c</fields>
     </miniLayout>
     <relatedLists>
         <fields>TASK.SUBJECT</fields>

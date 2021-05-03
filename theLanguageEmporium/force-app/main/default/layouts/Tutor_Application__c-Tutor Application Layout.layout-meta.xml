@@ -8,10 +8,6 @@
         <layoutColumns>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>Learner_Account__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
                 <field>Date_Opened__c</field>
             </layoutItems>
             <layoutItems>
@@ -29,6 +25,10 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>Name</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>Learner_Account__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns/>
@@ -63,7 +63,6 @@
         <style>CustomLinks</style>
     </layoutSections>
     <miniLayout>
-        <fields>Learner_Account__c</fields>
         <fields>Date_Opened__c</fields>
         <fields>Learner_Since__c</fields>
         <fields>Qualifications__c</fields>

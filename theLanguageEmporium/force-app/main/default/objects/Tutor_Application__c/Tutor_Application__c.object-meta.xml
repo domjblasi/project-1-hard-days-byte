@@ -152,7 +152,7 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <externalSharingModel></externalSharingModel>
     <label>Tutor Application</label>
     <nameField>
         <displayFormat>TutAppID-{0000}</displayFormat>
@@ -162,6 +162,6 @@
     </nameField>
     <pluralLabel>Tutor Applications</pluralLabel>
     <searchLayouts/>
-    <sharingModel>ControlledByParent</sharingModel>
+    <sharingModel>Private</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>
