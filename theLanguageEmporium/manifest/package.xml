@@ -73,7 +73,7 @@
         <name>CustomObject</name>
     </types>
     <types>
-        <members>Candidate___c</members>
+        <members>Candidate__c</members>
         <name>CustomObject</name>
     </types>
     <types>

@@ -1,89 +1,80 @@
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  display:flex;
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
+:root {
+  --main-color: #5D4B6F;
+  --main-bg-color: #E6E3E9;
+  --main-text-color: #160422;
+  --main-accent-color: #C4C4C4;
+  --secondary-accent-color: #56525A;
+}
+
+.slds-scope h1, h1, .slds-scope h2, h2, .slds-scope h3 {
+  font-family: "Merriweather";
+  color: var(--main-text-color)
+}
+
+.slds-scope h4, h4, .slds-scope h5, h5 {
+  font-family: "Merriweather";
+  font-style:italic;
+  color: var(--main-text-color);
+}
+
+.slds-scope h6, h6, .slds-scope p, p {
+  font-family: "Inconsolata";
+  font-weight: normal;
+  font-style: normal;
+  color: var(--main-color);
+}
+
+.slds-scope h1, h1{
+  font-size: 50px;
+}
+.slds-scope h2, h2{
+  font-size: 40px;
+}
+.slds-scope h3, h3{
+  font-size: 35px;
+}
+.slds-scope h4, h4{
+  font-size: 30px;
+}
+.slds-scope h5, h5{
+  font-size: 25px;
+}
+.slds-scope h6, h6{
+  font-size: 20px;
+}
+.slds-scope p, p{
+  font-size: 18px;
+}
+
+.slds-scope a, a {
+  color:var(--main-color);
+}
+
+.slds-scope a:hover, a {
+  color:var(--main-text-color);
+}
+
+.slds-scope a:visited, a:visited {
+  color:var(--main-color);
 }
 
 #sideBar {
-  width: 20vw;
-  height: 100vh;
-  position:absolute;
-  top: 0;
-  left: 0;
-  transform:translate(-100%, 0);
-  background: #5D4B6F;
-  transition: transform 1.5s cubic-bezier(.59,-0.06,0,1.08)
+  background: var(--main-color); 
+  width: 3.5%; 
+  overflow-x:hidden; 
+  height:100vh; 
+  position:fixed; 
+  top:0; 
+  left:0;
+  transition: width 1s ease-in;
+} 
+#sideBar:hover {
+  width: 200px;
 }
 
-#sideBar.show {
-  transform:translate(0, 0);
-}
-
-#navBrand img {
-  width: 100%
-}
-
-.navigation {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  list-style-type: none;
-}
-
-.navlink {
-  font-size: 35px;
-  margin-left: 10px;
-}
-
-.navlink a { 
-  text-decoration: none;
-}
-
-.navlink a:hover {
-  color:blue;
-}
-
-#landingMain {
-  width: 100%;
-  height: 100vh;
-  background-image: url('./HomeGlobe.jpg');
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items:center;
-}
-
-#landingQuote {
-  width: 80%;
-  margin: 0 auto;
-  text-align:center;
-  color: white;
-  font-size: 40px;
-  margin-top:25px;
-}
-
-.btn-large {
-  padding: 12px;
-  border-radius: 25px;
-  border: 2px solid black;
-  font-size: 35px;
-  background-color:grey;
-  color: black;
-  margin: 5px;
-  text-decoration: none;
-}
-
-#navButton {
-  height: 60px;
-  display: inline;
-  position: absolute;
-  font-size: 40px;
-  top: 0;
-  left:100%;
-}
-
-input[text]{
-  border-radius: 10px;
+.slds-scope .slds-icon_container {
+  background: var(--main-color);
 }

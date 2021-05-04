@@ -18,10 +18,10 @@
             	<apex:repeat value="{!education}" var="ed">
                     <!--- Title sub-section with index --->
             		<apex:pageBlockSection title="{!'Education #' + index}">
-                    	<apex:inputField value="{!ed.School__c}"/>
-                		<apex:inputField value="{!ed.Degree__c}"/>
+                    	<apex:inputField required="true" value="{!ed.School__c}"/>
+                		<apex:inputField required="true" value="{!ed.Degree__c}"/>
                 		<apex:inputField value="{!ed.Major__c}"/>
-                		<apex:inputField value="{!ed.Date_Started__c}"/>
+                		<apex:inputField required="true" value="{!ed.Date_Started__c}"/>
                 		<apex:inputField value="{!ed.Date_Of_Graduation__c}"/>
                 		<apex:inputField value="{!ed.Graduated__c}"/>
                     </apex:pageBlockSection>
@@ -37,12 +37,12 @@
             	<apex:repeat value="{!experience}" var="exp">
             		<!--- Create index variable --->
                     <apex:pageBlockSection title="{!'Experience #' + index}">
-                    	<apex:inputField value="{!exp.Company_Name__c}"/>
+                    	<apex:inputField required="true" value="{!exp.Company_Name__c}"/>
                 		<apex:inputField value="{!exp.Company_Phone__c}"/>
-                		<apex:inputField value="{!exp.Address__c}"/>
-                		<apex:inputField value="{!exp.Reported_To__c}"/>
-                		<apex:inputField value="{!exp.Start_Date__c}"/>
-                		<apex:inputField value="{!exp.End_Date__c}"/>
+                		<apex:inputField required="true" value="{!exp.Address__c}"/>
+                		<apex:inputField required="true" value="{!exp.Reported_To__c}"/>
+                		<apex:inputField required="true" value="{!exp.Start_Date__c}"/>
+                		<apex:inputField required="true" value="{!exp.End_Date__c}"/>
                         <apex:inputField style="width:100%;" value="{!exp.Description__c}"/>
                     </apex:pageBlockSection>
             		<!--- Adjust index variable --->

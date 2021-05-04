@@ -2,8 +2,10 @@
    	<apex:stylesheet value="{!URLFor($Resource.StyleZip, 'css/index.css')}"/>
     <c:BackToPositions rendered="{!ISBLANK(pickedPosition.id)}"/>
     <apex:pageBlock rendered="{!NOT(ISBLANK(pickedPosition.id))}">
-    	    <h2>
-        		Thank you for applying for the open position {!pickedPosition.Name}. If you would like to apply for anothera position please make your way back to our <a href="/apex/recruitingLanding">Recruiting Portal</a>.
+        <main>
+        	<h2 style="width:80%">
+        		Thank you for applying for the open position {!pickedPosition.Name}. If you would like to apply for another position please make your way back to our <a href="/apex/recruitingLanding">Recruiting Portal</a>.
     		</h2>
+        </main>
     </apex:pageBlock>
 </apex:page>
