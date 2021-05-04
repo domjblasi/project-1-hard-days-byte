@@ -201,6 +201,10 @@
         <name>Layout</name>
     </types>
     <types>
+        <members>Quiz_Data__c-Quiz Data Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
         <members>Session__c-Session Layout</members>
         <name>Layout</name>
     </types>
