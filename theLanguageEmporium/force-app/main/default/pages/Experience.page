@@ -1,10 +1,18 @@
 <apex:page sidebar="false" showChat="false" showHeader="false" controller="RecruitingWizard" standardStylesheets="false">
-    <apex:stylesheet value="{!URLFOR($Resource.StyleZip, '/css/index.css')}"/>
+    <apex:slds />
+    <c:NavBar />
+    <main style="padding: 25px 100px;">
     <c:BackToPositions rendered="{!ISBLANK(pickedPosition.id)}"/>
     <apex:pageBlock rendered="{!NOT(ISBLANK(pickedPosition.id))}">
+        <h1 style="width:100%; text-align: center; font-size: 50px; font-weight: 700;">
+            Education And Experience
+        </h1>
     	<apex:form >
             <!--- Education Section --->
-            <apex:pageBlockSection id="education" title="Education" columns="1">
+            <h2 style="width:100%; text-align:center; font-size:35px; font-weight: 700px;">
+                Education
+            </h2>
+            <apex:pageBlockSection id="education" columns="1">
                 <!--- Create index variable --->
                 <apex:variable var="index" value="1"/>
             	<apex:repeat value="{!education}" var="ed">
@@ -19,11 +27,9 @@
                     </apex:pageBlockSection>
                     <!--- Adjust index variable --->
                     <apex:variable var="index" value="{!VALUE(index) + 1}"/>
-    			</apex:repeat>      
-                <apex:pageBlockSection >
+    			</apex:repeat>
                 	<apex:commandButton action="{!addEd}" reRender="education" immediate="true" value="Add Education" />
-            		<apex:commandButton action="{!remEd}" reRender="education" immediate="true" value="Remove Education" />
-                </apex:pageBlockSection>
+            		<apex:commandButton action="{!remEd}" reRender="education" immediate="true" value="Remove Education" />              	
             </apex:pageBlockSection>
             <!--- Experience Section --->
             <apex:pageBlockSection id="experience" title="Work Experience" columns="1">
@@ -37,19 +43,18 @@
                 		<apex:inputField value="{!exp.Reported_To__c}"/>
                 		<apex:inputField value="{!exp.Start_Date__c}"/>
                 		<apex:inputField value="{!exp.End_Date__c}"/>
-                        <apex:inputField value="{!exp.Description__c}"/>
+                        <apex:inputField style="width:100%;" value="{!exp.Description__c}"/>
                     </apex:pageBlockSection>
             		<!--- Adjust index variable --->
                     <apex:variable var="index" value="{!VALUE(index) + 1}"/>
     			</apex:repeat>
-                <apex:pageBlockSection >
-                	<apex:commandButton action="{!addExp}" reRender="experience" immediate="true" value="Add Experience" />
-            		<apex:commandButton action="{!remExp}" reRender="experience" immediate="true" value="Remove Experience" />
-                </apex:pageBlockSection>
+                	<apex:commandButton action="{!addExp}" style="width: 25%; display:inline;" reRender="experience" immediate="true" value="Add Experience" />
+            		<apex:commandButton action="{!remExp}" style="width: 25%; display:inline;" reRender="experience" immediate="true" value="Remove Experience" />
             </apex:pageBlockSection>
-            <apex:commandButton action="{!candidatePage}" immediate="true" value="Previous Page"/>
-            <apex:commandButton action="{!candidateQuestions}" value="Next Page"/> 
+            <apex:commandButton style="width: 25%" action="{!candidatePage}" immediate="true" value="Previous Page"/>
+            <apex:commandButton style="width: 25%" action="{!candidateQuestions}" value="Next Page"/> 
     	</apex:form>
-    </apex:pageBlock>	
+    </apex:pageBlock>
+    </main>
     <apex:includeScript value="{!$Resource.customJavascript}"/>
 </apex:page>
