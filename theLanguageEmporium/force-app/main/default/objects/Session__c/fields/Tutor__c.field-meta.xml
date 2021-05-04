@@ -6,7 +6,7 @@
     <referenceTo>Tutor__c</referenceTo>
     <relationshipLabel>Sessions</relationshipLabel>
     <relationshipName>Sessions</relationshipName>
-    <relationshipOrder>1</relationshipOrder>
+    <relationshipOrder>0</relationshipOrder>
     <reparentableMasterDetail>false</reparentableMasterDetail>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
