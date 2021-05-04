@@ -1,6 +1,7 @@
 <apex:page sidebar="false" showChat="false" showHeader="false" controller="RecruitingWizard" standardStylesheets="false">
     <apex:stylesheet value="{!URLFOR($Resource.StyleZip, '/css/index.css')}"/>
-    <apex:pageBlock title="Demographic Questions">
+    <c:BackToPositions rendered="{!ISBLANK(pickedPosition.id)}"/>
+    <apex:pageBlock title="Demographic Questions" rendered="{!NOT(ISBLANK(pickedPosition.id))}">
         <p>
             In an effort to be more inclusive, we ask these questions and track them anonymously.
         </p>

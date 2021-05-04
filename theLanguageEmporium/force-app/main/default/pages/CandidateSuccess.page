@@ -1,6 +1,9 @@
 <apex:page sidebar="false" showChat="false" showHeader="false" controller="RecruitingWizard" standardStylesheets="false" >
    	<apex:stylesheet value="{!URLFor($Resource.StyleZip, 'css/index.css')}"/>
-    <h2>
-        Thank you for applying for the open position {!pickedPosition.Name}. If you would like to apply for another position please make your way back to our <a href="/apex/recruitingLanding">Recruiting Portal</a>.
-    </h2>
+    <c:BackToPositions rendered="{!ISBLANK(pickedPosition.id)}"/>
+    <apex:pageBlock rendered="{!NOT(ISBLANK(pickedPosition.id))}">
+    	    <h2>
+        		Thank you for applying for the open position {!pickedPosition.Name}. If you would like to apply for anothera position please make your way back to our <a href="/apex/recruitingLanding">Recruiting Portal</a>.
+    		</h2>
+    </apex:pageBlock>
 </apex:page>

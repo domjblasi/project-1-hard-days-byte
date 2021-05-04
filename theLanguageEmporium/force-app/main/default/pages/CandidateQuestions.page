@@ -1,6 +1,7 @@
 <apex:page sidebar="false" showChat="false" showHeader="false" controller="RecruitingWizard" standardStylesheets="false">
 	<apex:stylesheet value="{!URLFOR($Resource.StyleZip, '/css/index.css')}"/>
-   	<apex:pageBlock title="Questions">
+    <c:BackToPositions rendered="{!ISBLANK(pickedPosition.id)}"/>
+   	<apex:pageBlock title="Questions" rendered="{!NOT(ISBLANK(pickedPosition.id))}">
     	<p>
             Please answer these questions truthfully and to the best of your ability
         </p>

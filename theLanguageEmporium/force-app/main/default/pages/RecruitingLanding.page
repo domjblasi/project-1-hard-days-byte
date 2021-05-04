@@ -1,4 +1,5 @@
-<apex:page sidebar="false" showChat="false" showHeader="false" controller="RecruitingWizard" standardStylesheets="false" >
+<apex:page sidebar="false" showChat="false" showHeader="false" controller="RecruitingWizard" standardStylesheets="false" lightningStylesheets="true">
+    <apex:slds />
     <apex:stylesheet value="{!URLFor($Resource.StyleZip, 'css/index.css')}"/>
     <c:NavBar />
     <main>

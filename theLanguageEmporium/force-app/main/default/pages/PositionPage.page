@@ -1,7 +1,7 @@
 <apex:page sidebar="false" showChat="false" showHeader="false" controller="RecruitingWizard" standardStylesheets="false">
     <apex:stylesheet value="{!URLFOR($Resource.StyleZip, '/css/index.css')}"/>
     <main style="{display:flex;}">
-        <c:BackToPositions rendered="{!ISBLANK(pickedPosition.id)}"/>
+    <c:BackToPositions rendered="{!ISBLANK(pickedPosition.id)}"/>
     <apex:pageBlock rendered="{!NOT(ISBLANK(pickedPosition.id))}">
     	    <section>
     	<h2>

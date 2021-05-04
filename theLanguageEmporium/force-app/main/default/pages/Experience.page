@@ -1,6 +1,7 @@
 <apex:page sidebar="false" showChat="false" showHeader="false" controller="RecruitingWizard" standardStylesheets="false">
     <apex:stylesheet value="{!URLFOR($Resource.StyleZip, '/css/index.css')}"/>
-    <apex:pageBlock >
+    <c:BackToPositions rendered="{!ISBLANK(pickedPosition.id)}"/>
+    <apex:pageBlock rendered="{!NOT(ISBLANK(pickedPosition.id))}">
     	<apex:form >
             <!--- Education Section --->
             <apex:pageBlockSection id="education" title="Education" columns="1">
