@@ -6,6 +6,7 @@ public class learnerController {
     public List<Lesson__c> lessons {get;set;}
     public List<Tutor__c> tutors {get;set;}
     public Session__c newSession {get;set;}
+    
  
     public learnerController(){
         currentUser = [SELECT Id, ContactId FROM User WHERE id=:userinfo.getuserid() LIMIT 1];
@@ -16,6 +17,8 @@ public class learnerController {
                   FROM Lesson__c where id= :currentContact.Current_Lesson__c];
         tutors = [SELECT name, email__c, language__c FROM Tutor__c WHERE learner_account__c = :currentContact.id];
     	//newSession.learner__c = currentContact.id;
+    	this.newSession = new Session__c(learner__c = currentContact.id);
+       
     }
     
     public PageReference getNewSession(){
@@ -24,6 +27,10 @@ public class learnerController {
         newSession.setRedirect(true);
    		return newSession;
 	}
+    public pageReference saveSession(){
+        insert newSession;
+       	return new pageReference(ApexPages.currentPage().geturl());
+    }
     /**
     public PageReference returnToLearnerPage(){
    		//PageReference pr = new PageReference('/apex/Session');
