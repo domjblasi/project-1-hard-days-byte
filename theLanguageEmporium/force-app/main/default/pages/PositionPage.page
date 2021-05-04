@@ -1,7 +1,9 @@
 <apex:page sidebar="false" showChat="false" showHeader="false" controller="RecruitingWizard" standardStylesheets="false">
     <apex:stylesheet value="{!URLFOR($Resource.StyleZip, '/css/index.css')}"/>
     <main style="{display:flex;}">
-    <section>
+        <c:BackToPositions rendered="{!ISBLANK(pickedPosition.id)}"/>
+    <apex:pageBlock rendered="{!NOT(ISBLANK(pickedPosition.id))}">
+    	    <section>
     	<h2>
             {!pickedPosition.name}
         </h2>
@@ -19,14 +21,15 @@
         <apex:pageBlock >
        		<apex:form >
                 <apex:pageBlockSection columns="1">
-                	<apex:inputField required="true" value="{!positionCandidate.First_Name__c}"/>
-                    <apex:inputField required="true" value="{!positionCandidate.Last_Name__c}"/>
-                	<apex:inputField required="true" value="{!positionCandidate.Email__c}"/>
+                	<h3>
+                        Your next step to a world full of enriching languages and inspiring colleagues starts today!
+                    </h3>
                 	<apex:commandButton action="{!candidatePage}" value="Apply Now!"/>
                 </apex:pageBlockSection>
         	</apex:form>
         </apex:pageBlock>
     </section>
+    </apex:pageBlock>
     </main>
     <apex:includeScript value="{!$Resource.customJavascript}"/>
 </apex:page>

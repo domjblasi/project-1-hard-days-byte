@@ -1,6 +1,7 @@
 public class RecruitingWizard {
     public List<Position__c> positions{get; set;}
     public Position__c pickedPosition{get; set;}
+    @testVisible
     Id pickedPositionId{get; set;}
     public Job_Application__c candidateApplication{get; set;}
     public Candidate__c positionCandidate{get; set;}
@@ -119,16 +120,6 @@ public class RecruitingWizard {
         return null;
     }
     
-    public class AnswerWrapper{
-        public Candidate_Answer__c answer{get; set;}
-        public Position_Question__c question{get; set;}
-        
-        public answerWrapper(Position_Question__c newQuestion, Candidate_Answer__c newAnswer){
-            answer = newAnswer;
-            question = newQuestion;
-        }
-    }
-    
     public PageReference submit(){
         SavePoint sp = Database.setSavePoint();
         try{
@@ -166,4 +157,5 @@ public class RecruitingWizard {
        	}
         
     }
+
 }

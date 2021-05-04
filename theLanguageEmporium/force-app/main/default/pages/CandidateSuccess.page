@@ -1,5 +1,6 @@
-<apex:page >
+<apex:page sidebar="false" showChat="false" showHeader="false" controller="RecruitingWizard" standardStylesheets="false" >
+   	<apex:stylesheet value="{!URLFor($Resource.StyleZip, 'css/index.css')}"/>
     <h2>
-        SUCCESS!!!
+        Thank you for applying for the open position {!pickedPosition.Name}. If you would like to apply for another position please make your way back to our <a href="/apex/recruitingLanding">Recruiting Portal</a>.
     </h2>
 </apex:page>
