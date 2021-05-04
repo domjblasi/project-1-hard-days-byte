@@ -59,8 +59,6 @@
     <tabs>QA_Review__c</tabs>
     <tabs>Tutor__c</tabs>
     <tabs>standard-Task</tabs>
-    <tabs>Line_Item__c</tabs>
-    <tabs>Order__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Content_Development_UtilityBar</utilityBar>
 </CustomApplication>

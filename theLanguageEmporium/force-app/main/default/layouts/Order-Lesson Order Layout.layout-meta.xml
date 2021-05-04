@@ -112,10 +112,6 @@
         <style>CustomLinks</style>
     </layoutSections>
     <relatedLists>
-        <fields>NAME</fields>
-        <relatedList>Line_Item__c.Order__c</relatedList>
-    </relatedLists>
-    <relatedLists>
         <fields>Product2</fields>
         <fields>ProductCode</fields>
         <fields>Quantity</fields>
