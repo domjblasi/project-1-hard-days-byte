@@ -3,12 +3,10 @@
         <apex:pageBlock title="Session Enrollment">
             <apex:pageBlockSection >
                 <apex:inputField value="{!Session__c.name}"> </apex:inputField> <br/>
-                <apex:inputField value="{!Session__c.Learner__c}"> </apex:inputField> <br/>
+               	<apex:outputField title="Learner: " value="{!Session__c.Learner__c}"/>  <br/>
                 <apex:inputField value="{!Session__c.Tutor__c}"> </apex:inputField>  <br/>
                 <apex:inputField value="{!Session__c.Duration__c}"> </apex:inputField>  <br/>
                 <apex:inputField value="{!Session__c.Language__c}"> </apex:inputField> <br/>
-                
-            
             </apex:pageBlockSection>
             <apex:commandButton value="Book Session" action="{!save}"/>
             

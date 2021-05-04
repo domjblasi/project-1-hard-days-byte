@@ -35,4 +35,4 @@ trigger CourseTrigger on Course__c (before insert, before update, before delete,
             CourseTriggerHandler.SendMail();
         }
     }
-}
+} 

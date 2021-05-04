@@ -5,8 +5,8 @@ public class learnerExtension {
     
     public learnerExtension(ApexPages.StandardController sc){
         standardController = sc;
-        currentUser = [select firstname from user where id=:userinfo.getuserid() LIMIT 1];
-        currentContact=[select id, name from Contact WHERE id = :userinfo.getuserid() LIMIT 1];
+        currentUser = [select Id, ContactId from User WHERE id=:userinfo.getuserid() LIMIT 1];
+        currentContact=[select id, name from Contact WHERE id = :currentUser.ContactId LIMIT 1];
 		
     }
     public PageReference getNewSession(){
