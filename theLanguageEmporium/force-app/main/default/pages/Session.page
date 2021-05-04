@@ -11,7 +11,8 @@
             </apex:pageBlockSection>
             <apex:commandButton value="Book Session" action="{!saveSession}"/>
             
+            
         </apex:pageBlock>
-    
+    <apex:commandButton value="Return to Learner Page" action="{!returnToLearnerPage}"/>
     </apex:form>
 </apex:page>

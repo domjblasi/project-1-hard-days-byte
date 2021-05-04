@@ -29,15 +29,17 @@ public class learnerController {
 	}
     public pageReference saveSession(){
         insert newSession;
-       	return new pageReference(ApexPages.currentPage().geturl());
+       	//PageReference bookedSession = Page.Session;
+       // bookedSession.setRedirect(true);
+   		return Page.BookedLesson;
     }
-    /**
+  
     public PageReference returnToLearnerPage(){
    		//PageReference pr = new PageReference('/apex/Session');
-   		PageReference learnerPage = Page.Session;
-        learnerPage.setRedirect(true);
-   		return learnerPage;
-	}**/
+   		//PageReference learnerPage = Page.Session;
+        //learnerPage.setRedirect(true);
+   		return Page.learner;
+	}
     
 
 }
