@@ -61,6 +61,22 @@
         <name>CustomObject</name>
     </types>
     <types>
+        <members>Candidate_Answer__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Candidate_Education__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Candidate_Experience__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Candidate___c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
         <members>Contact</members>
         <name>CustomObject</name>
     </types>
