@@ -1,0 +1,26 @@
+<apex:page Controller="OrderCExtension">
+    
+    <apex:form >
+    	<div>
+            <apex:outputPanel >
+                <apex:repeat var="course" value="{!courses}">
+                    <apex:outputPanel >
+                        <div>
+                            {!course.Name}
+                        </div>
+                        <div>
+                            {!course.Language__c}
+                        </div>
+                        <!--<div>
+                        	{!course.of_Lessons__c}
+                        </div>-->
+                        <span>
+                            <apex:commandButton value="Add to Cart" action="{!AddToOrder}"></apex:commandButton>
+                            	<apex:param name="courseId" value="{!course.id}" />
+                        </span>
+                    </apex:outputPanel>
+                </apex:repeat>
+            </apex:outputPanel>
+        </div>
+    </apex:form>
+</apex:page>

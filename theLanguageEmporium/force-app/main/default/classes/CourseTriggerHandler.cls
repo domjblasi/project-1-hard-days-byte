@@ -12,7 +12,7 @@
 
 public class CourseTriggerHandler {
     
-    public static void FlagQAReview(List<Course__c> courses) {
+    /*public static void FlagQAReview(List<Course__c> courses) {
         
         List<Task> insertTask = new List<Task>();
         
@@ -47,7 +47,7 @@ public class CourseTriggerHandler {
         
         // Create new task
         insert insertTask;	
-    }
+    }*/
     
     public static void createProducts(List<Course__c> courses) {
         List<Product2> newProducts = new List<Product2>();
@@ -80,7 +80,7 @@ public class CourseTriggerHandler {
     }
     
     
-    public static void SendMail() {
+    /*public static void SendMail() {
         Messaging.SingleEmailMessage email = new Messaging.SingleEmailMessage();
         User[] u = new User[] {[SELECT Name, Email FROM User WHERE UserRole.Name = 'Head of Content Development']};
         String[] toAddress = new String[] {u[0].Email};
@@ -91,6 +91,6 @@ public class CourseTriggerHandler {
                                '\n\nThank you,\nYour Friendly Neighborhood Salesforce Admin');
         
         Messaging.sendEmail(new Messaging.SingleEmailMessage[] {email});
-    }
+    }*/
     
 }
