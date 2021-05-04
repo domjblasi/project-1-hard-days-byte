@@ -125,6 +125,10 @@
         <name>CustomObject</name>
     </types>
     <types>
+        <members>Quiz_Data__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
         <members>Session__c</members>
         <name>CustomObject</name>
     </types>
