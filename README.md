@@ -3,7 +3,19 @@
 
 #### Built with Salesforce
 
-### [Documentation](https://github.com/EX-Salesforce-Training/project-1-hard-days-byte/wiki/documentation)
+## Languages and Technologies
+ - Salesforce Platform
+ - Apex
+ - Javascript
+ - CSS
+ - HTML
+
+## Version Control
+ - Git
+ - Github
+ - Salesforce Developer Experience CLI and Visual Studio Code Extension
+
+[Documentation](https://github.com/EX-Salesforce-Training/project-1-hard-days-byte/wiki/documentation)
 
 ## Setup
 
