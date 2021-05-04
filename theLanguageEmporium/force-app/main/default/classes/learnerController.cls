@@ -38,6 +38,7 @@ public class learnerController {
    		//PageReference pr = new PageReference('/apex/Session');
    		//PageReference learnerPage = Page.Session;
         //learnerPage.setRedirect(true);
+    
    		return Page.learner;
 	}
     

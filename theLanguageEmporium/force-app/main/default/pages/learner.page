@@ -1,22 +1,25 @@
 <apex:page controller="learnerController" >
+    <apex:stylesheet value="{!$Resource.LearnerCSS}" />
     <apex:form >
       <!-- Welcome Header-->
         <apex:pageBlock title="Welcome {!currentContact.name}!">
             
         <!---- Contact Information ---->
-            <apex:pageBlockSection >
+            <div class = "a">
+           <apex:pageBlockSection >
                 <h1> Account Information </h1> <br/>
-               	<apex:outputField title="Name: " value="{!currentContact.name}" />  
-                <apex:outputField title="Email: " value="{!currentContact.email}"/> 
-                <apex:outputField title="Phone: " value="{!currentContact.phone}"/> 
-                <apex:outputField title="Learner Since: " value="{!currentContact.Learner_Since__c}"/> 
-            </apex:pageBlockSection>
+               	<apex:outputField style="float:left" title="Name: " value="{!currentContact.name}" />  <br>
+                <apex:outputField title="Email: " value="{!currentContact.email}"/> <br>
+                <apex:outputField title="Phone: " value="{!currentContact.phone}"/> <br>
+                <apex:outputField title="Learner Since: " value="{!currentContact.Learner_Since__c}"/> <br>
+          </apex:pageBlockSection>
+                 </div>
             
         <!------ Current Courses ------>
             <apex:pageBlockSection >
                 <h1> Current Enrolled Course </h1>
                <!-- <p> Course Name: </p>-->
-                <apex:outputField title="Course: " value="{!currentContact.Current_Course__c}"/>
+                <apex:outputField title="Course: " value="{!currentContact.Current_Course__c}"/><br>
             </apex:pageBlockSection>
             
         <!------ Current Lessons------>
@@ -27,7 +30,7 @@
                     <apex:column value="{!lesson.Course__c}"/>
                     <apex:column value="{!lesson.Lesson_Number__c}"/>
                     <apex:column value="{!lesson.Language_s__c}"/>
-                    <apex:column value="{!lesson.Completion_Status__c}"/>
+                    <apex:column value="{!lesson.Completion_Status__c}"/> 
                 </apex:pageBlockTable>
             </apex:pageBlockSection>
             

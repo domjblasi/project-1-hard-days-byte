@@ -1,4 +1,5 @@
 <apex:page controller="learnerController">
+   
     <apex:form >
         <apex:pageBlock title="Session Enrollment">
             <apex:pageBlockSection >
@@ -13,6 +14,6 @@
             
             
         </apex:pageBlock>
-    <apex:commandButton value="Return to Learner Page" action="{!returnToLearnerPage}"/>
+    <apex:commandButton immediate="true" value="Return to Learner Page" action="{!returnToLearnerPage}"/>
     </apex:form>
 </apex:page>
