@@ -9,7 +9,7 @@
 //		by the recruiting team (queue).
 //
 ////////////////////////////////////////////////////
- 
+
 trigger TutorApplicationTrigger on Tutor_Application__c (before insert, before update, before delete, after insert, after update, after delete, after undelete) {
     switch on trigger.operationType {
         when BEFORE_INSERT{

@@ -3,7 +3,8 @@
     <apiVersion>51.0</apiVersion>
     <availableInTouch>false</availableInTouch>
     <confirmationTokenRequired>false</confirmationTokenRequired>
-    <label>LandingPage</label>
+    <description>Default Salesforce Sites My Profile page</description>
+    <label>MyProfilePage</label>
     <packageVersions>
         <majorNumber>1</majorNumber>
         <minorNumber>7</minorNumber>

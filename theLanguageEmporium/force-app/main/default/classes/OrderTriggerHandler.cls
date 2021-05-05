@@ -1,5 +1,5 @@
 public class OrderTriggerHandler {
-    /*
+    
     public static void LearnerAccessGen(List<Order> orders) {
         List<Learner_Access__c> insertList = new List<Learner_Access__c>();
         
@@ -15,6 +15,6 @@ public class OrderTriggerHandler {
         }
         
         insert insertList;
-    }**/
+    }
 
 }

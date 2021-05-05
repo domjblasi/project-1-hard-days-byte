@@ -5,7 +5,7 @@
 // Created: 2021-04-08
 // Updated: 2021-04-18
 // Description: After creating a lesson record, flag
-//      QA (queue) to review the new lesson.
+// 		QA (queue) to review the new lesson.
 //
 ////////////////////////////////////////////////////
 
