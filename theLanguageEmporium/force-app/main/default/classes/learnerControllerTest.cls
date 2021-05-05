@@ -31,14 +31,12 @@ public class learnerControllerTest{
         email__c='batman@gmail.com'
         );
         Database.insert(portalAccount1);
-        Course__c newCourse = learnerUtilityClass.getCourse();
         //Create contact
         Contact contact1 = new Contact(
         FirstName = 'Test',
         Lastname = 'McTesty',
         AccountId = portalAccount1.Id,
-        Email = System.now().millisecond() + 'test@test.com',
-        last_completed_course__c = newCourse.id
+        Email = System.now().millisecond() + 'test@test.com'
         );
         Database.insert(contact1);
         

@@ -1,6 +1,5 @@
 <apex:page showHeader="false" sidebar="false" showChat="false" controller="learnerController" >
     <slds/>
-    <apex:stylesheet value="{!$Resource.LearnerCSS}" />
     <apex:form >
       <!-- Welcome Header-->
         <apex:pageBlock title="Welcome {!currentContact.name}!">
