@@ -1,33 +1,35 @@
-<apex:page sidebar="false" showHeader="false">
+<apex:page controller="QuizController" sidebar="false" showHeader="false">
     <apex:slds />
     <apex:stylesheet value="{!URLFOR($Resource.StyleZip, '/css/index.css')}" />
+	<apex:stylesheet value="{!URLFOR($Resource.StyleZip, 'css/quiz.css')}" />
     <c:NavBar />
-    
-    <main id="quizMain" style="margin-left:auto;margin-right:auto;width:75%;">
-        <h1 id="leadIntroHeader" style="font-size:26px;text-align:center;font-weight:bold;">QUIZ RESULTS</h1><br />
+    <main class="quizMain">
+        <h1 class="leadIntroHeader">QUIZ RESULTS</h1><br />
         <div class="slds-scope">
             <div class="slds-grid slds-gutters">
                 <div class="slds-col slds-size_2-of-12">
                 </div>
                 <div class="slds-col slds-size_8-of-12">
                     <div class="slds-grid slds-gutters">
-                        <div class="slds-col slds-size_3-of-12">
-                            <b>Correct:</b><br />
-                            <b>Incorrect:</b><br />
-                            <b>Final Score:</b><br />
+                        <div class="slds-col slds-size_3-of-12 quizResultsFields">
+                            Correct:<br />
+                            Incorrect:<br />
+                            Final Score:<br />
                             <br />
-                            <b>Total Score:</b><br />
-                            <b>Previous Rank:</b><br />
-                            <b>New Rank:</b>
+                            Total Score:<br />
+                            Previous Rank:<br />
+                            New Rank:
                         </div>
-                        <div class="slds-col slds-size_2-of-12 results" style="text-align:center;">
-                            <b>21</b><br />
-                            <b>4</b><br />
-                            <b>84%</b><br />
+                        <div class="slds-col slds-size_2-of-12 quizResults">
+                            <span style="color:#595">{!fin}</span><br />
+                            <span style="color:#933">{!incorrect}</span><br />
+                            <span style="color:#5D4B6F">{!percentage}%</span><br />
                             <br />
-                            <b>212,600</b><br />
-                            <b>4</b><br />
-                            <b>↑2</b>
+                            <span style="color:#595">{!totalscore}</span><br />
+                            <span style="color:#5D4B6F">{!prevRank}</span><br />
+                            <apex:outputText value="↓{!currRank}" rendered="{!prevRank<currRank}" style="color:#933;" />
+                            <apex:outputText value="↑{!currRank}" rendered="{!prevRank>currRank}" style="color:#595;" />
+                            <apex:outputText value="{!currRank}" rendered="{!prevRank=currRank}" style="color:#5D4B6F;" />
                         </div>
                         <div class="slds-col slds-size_7-of-12">
                         </div>
@@ -36,7 +38,7 @@
                 <div class="slds-col slds-size_2-of-12">
                 </div>
             </div>
-            
+            <h2 class="mainLink" style="margin-top:20px;"><a href="/apex/quizLeaderboard">View Leaderboard</a></h2>
         </div>
     </main>
     <apex:includeScript value="{!$Resource.customJavascript}"/>

@@ -17,15 +17,7 @@
         <name>ApexPage</name>
     </types>
     <types>
-        <members>quiz</members>
-        <name>ApexPage</name>
-    </types>
-    <types>
-        <members>quizLeaderboard</members>
-        <name>ApexPage</name>
-    </types>
-    <types>
-        <members>quizResults</members>
+        <members>*</members>
         <name>ApexPage</name>
     </types>
     <types>

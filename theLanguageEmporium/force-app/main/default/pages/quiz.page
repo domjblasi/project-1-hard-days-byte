@@ -1,68 +1,65 @@
-<apex:page sidebar="false" showHeader="false">
+<apex:page controller="QuizController" sidebar="false" showHeader="false">
     <apex:slds />
     <apex:stylesheet value="{!URLFOR($Resource.StyleZip, '/css/index.css')}" />
+    <apex:stylesheet value="{!URLFOR($Resource.StyleZip, 'css/quiz.css')}" />
     <c:NavBar />
-    <main id="quizMain" style="margin-left:auto;margin-right:auto;width:75%;">
-        <h1 id="leadIntroHeader" style="font-size:26px;text-align:center;font-weight:bold;">GER 101 - FINAL QUIZ</h1><br />
+    <main class="quizMain">
+        <h1 class="leadIntroHeader">GER 101 - FINAL QUIZ</h1><br />
         <div class="slds-scope">
             <div class="slds-grid slds-gutters">
                 <div class="slds-col slds-size_2-of-12">
                 </div>
                 <div class="slds-col slds-size_8-of-12">
-                    <span class="quizInstructions" style="font-size:12px;font-style:italic;">Complete the following sentences with the correct form of the verb.</span><br />
-                    <span class="quizQuestion" style="font-size:14px;font-weight:bold;">1. Der Ball ist vom Tisch <span class="quizAnswer">___________</span>.</span> <span class="quizInstructions" style="font-size:12px;font-style:italic;">(fallen)</span><br />
-                    <input type="radio" id="gefielen" name="q1" value="gefielen" /><label for="gefielen"> gefielen</label><br />
-                    <input type="radio" id="gefallen" name="q1" value="gefallen" /><label for="gefallen"> gefallen</label><br />
-                    <input type="radio" id="fallen" name="q1" value="fallen" /><label for="fallen"> fallen</label><br />
-                    <input type="radio" id="gefällt" name="q1" value="gefällt" /><label for="gefällt"> gefällt</label><br />
-                    <br />
-                    <span class="quizQuestion" style="font-size:14px;font-weight:bold;">2. Die Frau <span class="quizAnswer">___________</span> ihr schönes Kind.</span> <span class="quizInstructions" style="font-size:12px;font-style:italic;">(küssen)</span><br />
-                    <input type="radio" id="küsse" name="q2" value="küsse" /><label for="küsse"> küsse</label><br />
-                    <input type="radio" id="küsst" name="q2" value="küsst" /><label for="küsst"> küsst</label><br />
-                    <input type="radio" id="geküsst" name="q2" value="geküsst" /><label for="geküsst"> geküsst</label><br />
-                    <input type="radio" id="küssen" name="q2" value="küssen" /><label for="küssen"> küssen</label><br />
-                    <br />
-                    <span class="quizQuestion" style="font-size:14px;font-weight:bold;">3. Das faule Kind <span class="quizAnswer">___________</span> nicht in die Schule.</span> <span class="quizInstructions" style="font-size:12px;font-style:italic;">(gehen)</span><br />
-                    <input type="radio" id="ging" name="q3" value="ging" /><label for="ging"> ging</label><br />
-                    <input type="radio" id="gehst" name="q3" value="gehst" /><label for="gehst"> gehst</label><br />
-                    <input type="radio" id="geht" name="q3" value="geht" /><label for="geht"> geht</label><br />
-                    <input type="radio" id="gehen" name="q3" value="gehen" /><label for="gehen"> gehen</label><br />
-                    <br />
-                    <span class="quizInstructions" style="font-size:12px;font-style:italic;">Complete the following sentences with the correct vocab word.</span><br />
-                    <span class="quizQuestion" style="font-size:14px;font-weight:bold;">4. Der Ball fällt in den <span class="quizAnswer">___________</span>.</span><br />
-                    <input type="radio" id="Fluss" name="q4" value="Fluss" /><label for="Fluss"> Fluss</label><br />
-                    <input type="radio" id="Kreide" name="q4" value="Kreide" /><label for="Kreide"> Kreide</label><br />
-                    <input type="radio" id="Meer" name="q4" value="Meer" /><label for="Meer"> Meer</label><br />
-                    <input type="radio" id="Kind" name="q4" value="Kind" /><label for="Kind"> Kind</label><br />
-                    <br />
-                    <span class="quizQuestion" style="font-size:14px;font-weight:bold;">5. Der Bus fährt nicht so <span class="quizAnswer">___________</span>.</span><br />
-                    <input type="radio" id="traurig" name="q5" value="traurig" /><label for="traurig"> traurig</label><br />
-                    <input type="radio" id="schnell" name="q5" value="schnell" /><label for="schnell"> schnell</label><br />
-                    <input type="radio" id="Apfelmus" name="q5" value="Apfelmus" /><label for="Apfelmus"> Apfelmus</label><br />
-                    <input type="radio" id="sinken" name="q5" value="sinken" /><label for="sinken"> sinken</label><br />
-                    <br />
-                    <span class="quizQuestion" style="font-size:14px;font-weight:bold;">6. Susi Schminkersohn <span class="quizAnswer">___________</span> keinen Menschen.</span><br />
-                    <input type="radio" id="tötet" name="q6" value="tötet" /><label for="tötet"> tötet</label><br />
-                    <input type="radio" id="läuft" name="q6" value="läuft" /><label for="läuft"> läuft</label><br />
-                    <input type="radio" id="ist" name="q6" value="ist" /><label for="ist"> ist</label><br />
-                    <input type="radio" id="Biene" name="q6" value="Biene" /><label for="Biene"> Biene</label><br />
-                    <br />
-                    <span class="quizQuestion" style="font-size:14px;font-weight:bold;">7. Bist du <span class="quizAnswer">___________</span>, dass Susi keinen Menschen tötet?</span><br />
-                    <input type="radio" id="dumm" name="q7" value="dumm" /><label for="dumm">dumm</label><br />
-                    <input type="radio" id="faul" name="q7" value="faul" /><label for="faul">faul</label><br />
-                    <input type="radio" id="sicher" name="q7" value="sicher" /><label for="sicher">sicher</label><br />
-                    <input type="radio" id="Unterwasserkorbflechten" name="q7" value="Unterwasserkorbflechten" /><label for="Unterwasserkorbflechten">Unterwasserkorbflechten</label><br />
-                    <br />
-                    <span class="quizQuestion" style="font-size:14px;font-weight:bold;">8. Wieso <span class="quizAnswer">___________</span> sie denn so oft Erpressungsgeld?</span><br />
-                    <input type="radio" id="bezahlt" name="q8" value="bezahlt" /><label for="bezahlt">bezahlt</label><br />
-                    <input type="radio" id="bekommt" name="q8" value="bekommt" /><label for="bekommt">bekommt</label><br />
-                    <input type="radio" id="beneidet" name="q8" value="beneidet" /><label for="beneidet">beneidet</label><br />
-                    <input type="radio" id="beschönigt" name="q8" value="beschönigt" /><label for="beschönigt">beschönigt</label>
+                    <apex:form >
+                        <span class="quizInstructions">Complete the following sentences with the correct form of the verb.</span><br />
+                        <span class="quizQuestion">1. Der Ball ist vom Tisch <span class="quizAnswer">___________</span>.</span> <span class="quizInstructions">(fallen)</span><br />
+                        <apex:selectRadio value="{!q1}" layout="pageDirection">
+                            <apex:selectOptions value="{!q1items}"/>
+                        </apex:selectRadio>
+                        <br />
+                        <span class="quizQuestion">2. Die Frau <span class="quizAnswer">___________</span> ihr schönes Kind.</span> <span class="quizInstructions">(küssen)</span><br />
+                        <apex:selectRadio value="{!q2}" layout="pageDirection">
+                            <apex:selectOptions value="{!q2items}"/>
+                        </apex:selectRadio>
+                        <br />
+                        <span class="quizQuestion">3. Das faule Kind <span class="quizAnswer">___________</span> nicht in die Schule.</span> <span class="quizInstructions">(gehen)</span><br />
+                        <apex:selectRadio value="{!q3}" layout="pageDirection">
+                            <apex:selectOptions value="{!q3items}"/>
+                        </apex:selectRadio>
+                        <br />
+                        <span class="quizInstructions">Complete the following sentences with the correct vocab word.</span><br />
+                        <span class="quizQuestion">4. Der Ball fällt in den <span class="quizAnswer">___________</span>.</span><br />
+                        <apex:selectRadio value="{!q4}"  layout="pageDirection">
+                            <apex:selectOptions value="{!q4items}"/>
+                        </apex:selectRadio>
+                        <br />
+                        <span class="quizQuestion">5. Der Bus fährt nicht so <span class="quizAnswer">___________</span>.</span><br />
+                        <apex:selectRadio value="{!q5}" layout="pageDirection">
+                            <apex:selectOptions value="{!q5items}"/>
+                        </apex:selectRadio>
+                        <br />
+                        <span class="quizQuestion">6. Susi Schminkersohn <span class="quizAnswer">___________</span> keinen Menschen.</span><br />
+                        <apex:selectRadio value="{!q6}" layout="pageDirection">
+                            <apex:selectOptions value="{!q6items}"/>
+                        </apex:selectRadio>
+                        <br />
+                        <span class="quizQuestion">7. Bist du <span class="quizAnswer">___________</span>, dass Susi keinen Menschen tötet?</span><br />
+                        <apex:selectRadio value="{!q7}" layout="pageDirection">
+                            <apex:selectOptions value="{!q7items}"/>
+                        </apex:selectRadio>
+                        <br />
+                        <span class="quizQuestion">8. Wieso <span class="quizAnswer">___________</span> sie denn so oft Erpressungsgeld?</span><br />
+                        <apex:selectRadio value="{!q8}" layout="pageDirection">
+                            <apex:selectOptions value="{!q8items}"/>
+                        </apex:selectRadio>
+                        <div style="margin-top:50px;text-align:center;">
+                            <apex:commandButton action="{!submit}" value="Submit!" />
+                        </div>
+                    </apex:form>
                 </div>
                 <div class="slds-col slds-size_2-of-12">
                 </div>
             </div>
-            
         </div>
     </main>
     <apex:includeScript value="{!$Resource.customJavascript}"/>
