@@ -32,7 +32,7 @@ trigger OrderTrigger on Order (before insert, before update, before delete, afte
             
         }
         when AFTER_INSERT {
-            OrderTriggerHandler.LearnerAccessGen(trigger.new);
+            //OrderTriggerHandler.LearnerAccessGen(trigger.new);
         }
     }
 }

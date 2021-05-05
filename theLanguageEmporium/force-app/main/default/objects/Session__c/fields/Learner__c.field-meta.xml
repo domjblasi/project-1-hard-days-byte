@@ -3,10 +3,10 @@
     <fullName>Learner__c</fullName>
     <externalId>false</externalId>
     <label>Learner</label>
-    <referenceTo>Account</referenceTo>
+    <referenceTo>Contact</referenceTo>
     <relationshipLabel>Sessions</relationshipLabel>
     <relationshipName>Sessions</relationshipName>
-    <relationshipOrder>0</relationshipOrder>
+    <relationshipOrder>1</relationshipOrder>
     <reparentableMasterDetail>false</reparentableMasterDetail>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
