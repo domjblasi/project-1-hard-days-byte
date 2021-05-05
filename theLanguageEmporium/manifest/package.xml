@@ -13,6 +13,10 @@
         <name>ApexComponent</name>
     </types>
     <types>
+        <members>LandingPage</members>
+        <name>ApexPage</name>
+    </types>
+    <types>
         <members>*</members>
         <name>ApexPage</name>
     </types>
@@ -137,6 +141,10 @@
         <name>CustomObject</name>
     </types>
     <types>
+        <members>Quiz_Data__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
         <members>Session__c</members>
         <name>CustomObject</name>
     </types>
@@ -206,6 +214,10 @@
     </types>
     <types>
         <members>QA_Review__c-QA Review Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Quiz_Data__c-Quiz Data Layout</members>
         <name>Layout</name>
     </types>
     <types>
