@@ -9,10 +9,10 @@
             <div class = "a">
            <apex:pageBlockSection >
                 <h1> Account Information </h1> <br/>
-               	<apex:outputField style="float:left" title="Name: " value="{!currentContact.name}" />  <br>
-                <apex:outputField title="Email: " value="{!currentContact.email}"/> <br>
-                <apex:outputField title="Phone: " value="{!currentContact.phone}"/> <br>
-                <apex:outputField title="Learner Since: " value="{!currentContact.Learner_Since__c}"/> <br>
+               <apex:outputField style="float:left" title="Name: " value="{!currentContact.name}" />  <br/>
+               <apex:outputField title="Email: " value="{!currentContact.email}"/> <br/>
+               <apex:outputField title="Phone: " value="{!currentContact.phone}"/> <br/>
+               <apex:outputField title="Learner Since: " value="{!currentContact.Learner_Since__c}"/> <br/>
           </apex:pageBlockSection>
                  </div>
             
@@ -20,7 +20,7 @@
             <apex:pageBlockSection >
                 <h1> Current Enrolled Course </h1>
                <!-- <p> Course Name: </p>-->
-                <apex:outputField title="Course: " value="{!currentContact.Current_Course__c}"/><br>
+                <apex:outputField title="Course: " value="{!currentContact.Current_Course__c}"/><br/>
             </apex:pageBlockSection>
             
         <!------ Current Lessons------>
