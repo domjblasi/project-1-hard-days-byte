@@ -2,7 +2,7 @@ public class learnerController {
    	public User currentUser {get;set;}
     public Contact currentContact {get;set;}
     public List<Session__c> sessions {get;set;}
-    public List<Course__c> courses {get;set;}
+   // public List<Course__c> courses {get;set;}
     public List<Lesson__c> lessons {get;set;}
     public List<Tutor__c> tutors {get;set;}
     public Session__c newSession {get;set;}

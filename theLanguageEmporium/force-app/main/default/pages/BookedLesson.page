@@ -1,4 +1,5 @@
-<apex:page controller="learnerController" >
+<apex:page showHeader="false" sidebar="false" showChat="false"  controller="learnerController" >
+    <slds/>
     <apex:form >
     <apex:pageBlock >
     <h1>
