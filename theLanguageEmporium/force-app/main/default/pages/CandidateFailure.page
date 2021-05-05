@@ -1,4 +1,8 @@
-<apex:page sidebar="false" showChat="false" showHeader="false" controller="RecruitingWizard" standardStylesheets="false" >
+<apex:page sidebar="false" showChat="false" showHeader="false" controller="RecruitingWizard" standardStylesheets="false" lightningStylesheets="true">
+    <apex:slds />
+    <apex:stylesheet value="{!URLFOR($Resource.StyleZip, '/css/index.css')}"/>
+    <c:NavBar />
+    <main>
     <c:BackToPositions rendered="{!ISBLANK(pickedPosition.id)}"/>
     <apex:pageBlock >
     	<h3>
@@ -8,4 +12,5 @@
        		<apex:commandButton value="Return To Review" action="{!review}" />
     	</apex:form>
     </apex:pageBlock>
+    </main>
 </apex:page>

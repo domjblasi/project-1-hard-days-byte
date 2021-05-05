@@ -1,19 +1,11 @@
 <apex:page sidebar="false" showChat="false" showHeader="false" controller="RecruitingWizard" standardStylesheets="false">
 	<apex:slds />
-    <c:NavBar />
-    <style>
-    	input[type=text] {
-        border-radius:7px;
-       	font-size: 15px;
-        box-shadow:none;
-        }
-        
-        
-    </style>
-   	<main style="padding: 50px 100px;">
+    <apex:stylesheet value="{!URLFOR($Resource.StyleZip, 'css/index.css')}"/>
+    <c:NavBar />        
+   	<main>
         <c:BackToPositions rendered="{!ISBLANK(pickedPosition.id)}"/>
        	<apex:pageBlock rendered="{!NOT(ISBLANK(pickedPosition.id))}">
-            <h1 style="font-size:50px; text-align:center;">
+            <h1>
                 Candidate Details
             </h1>
         	<apex:form >
@@ -22,22 +14,16 @@
                 		<apex:inputField required="true" value="{!positionCandidate.Last_Name__c}"/>
                     	<apex:inputField required="true" value="{!positionCandidate.Phone__c}"/>
                     	<apex:inputField required="true" value="{!positionCandidate.Email__c}"/>
-                </apex:pageBlockSection>
-                <apex:pageBlockSection >
 						<apex:inputField required="true" value="{!positionCandidate.Street_Address_1__c}"/>
                     	<apex:inputField value="{!positionCandidate.Street_Address_2__c}"/>
                     	<apex:inputField required="true" value="{!positionCandidate.State_Province__c}"/>
                     	<apex:inputField required="true" value="{!positionCandidate.Country__c}"/>
                     	<apex:inputField required="true" value="{!positionCandidate.Zip_Postal_Code__c}"/>				
-                </apex:pageBlockSection>
-        		<apex:pageBlockSection columns="2">
-                    <apex:pageBlockSection columns="1">
                     	<apex:inputField required="true" style="width: 25%;" value="{!positionCandidate.Education__c}"/>
-                    </apex:pageBlockSection>
-                    <apex:pageBlockSection columns="1">
+                    	<apex:pageBlockSection columns="2">
                     	<apex:inputField value="{!positionCandidate.US_Citizen__c}"/>
-                    	<apex:inputField value="{!positionCandidate.Visa_Required__c}"/> 
-                    </apex:pageBlockSection>               
+                     	<apex:inputField value="{!positionCandidate.Visa_Required__c}"/> 
+                    	</apex:pageBlockSection>              
                 </apex:pageBlockSection>
                 
                 <!-- For future implementation --->
@@ -45,7 +31,8 @@
                 	<apex:inputFile required="true" value="{!body}" filename="{!filename}" contentType="{!content}" accept="doc, docx, pdf"/>
                 </apex:pageBlockSection>
 				--->
-                <section style="width: 25%; justify-content:center; margin:auto; padding: 20px 0;">
+                
+                <section>
                 	<apex:commandButton style="margin:0 5px;" action="{!positionPage}" immediate="true" value="Previous Page"/>
                 	<apex:commandButton style="margin:0 5px;" action="{!experience}" value="Next Page"/>  
                 </section>

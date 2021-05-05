@@ -9,6 +9,13 @@
   --secondary-accent-color: #56525A;
 }
 
+body {
+  background-color: var(--main-bg-color);
+}
+
+.slds-scope main {
+  padding: 25px 100px;
+}
 .slds-scope h1, h1, .slds-scope h2, h2, .slds-scope h3 {
   font-family: "Merriweather";
   color: var(--main-text-color)
@@ -51,6 +58,8 @@
 
 .slds-scope a, a {
   color:var(--main-color);
+  font-family: 'Inconsolata';
+  font-weight: 700;
 }
 
 .slds-scope a:hover, a {
@@ -63,7 +72,7 @@
 
 #sideBar {
   background: var(--main-color); 
-  width: 3.5%; 
+  width: 45px; 
   overflow-x:hidden; 
   height:100vh; 
   position:fixed; 
@@ -72,9 +81,63 @@
   transition: width 1s ease-in;
 } 
 #sideBar:hover {
-  width: 200px;
+  width: 250px;
 }
 
 .slds-scope .slds-icon_container {
   background: var(--main-color);
+}
+
+#navbarBrand {
+  display: block;
+  position: relative;
+  width: 250px;
+}
+
+#navbarBrand img {
+  width: 250px;
+  display:block;
+  position:relative;
+}
+
+.slds-scope .navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height:70vh;
+}
+
+.slds-scope .navigation a {
+  width: 250px;
+}
+
+.slds-scope .navigation a h5{
+  color:var(--main-bg-color);
+  z-index: 1000;
+}
+
+
+.slds-scope .navigation a:hover h5{
+  color:var(--main-text-color);
+  text-decoration:underline;
+}
+
+.slds-scope input[type=text]{
+  border-radius: 7px;
+  padding: 5px;
+}
+
+.slds-scope select{
+  min-width: 100px;
+  border-radius: 7px;
+  padding: 5px;
+}
+
+.slds-scope .multiSelectPicklistCell img{
+  width:40%;
+}
+.slds-scope label {
+  font-family: "Merriweather";
+  font-size: 18px;
+  font-weight: 600;
 }

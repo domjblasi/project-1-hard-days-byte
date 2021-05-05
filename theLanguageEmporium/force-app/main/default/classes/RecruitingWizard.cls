@@ -1,3 +1,14 @@
+////////////////////////////////////////////////////
+//
+// Name: RecruitingWizard
+// Author: Josh Miccolo
+// Created: 04/23/2021
+// Updated: 05/04/2021
+// Description: Wizard for the Recruiting Portal of
+// The Language Emporium
+//
+////////////////////////////////////////////////////
+
 public class RecruitingWizard {
     public List<Position__c> positions{get; set;}
     public Position__c pickedPosition{get; set;}
@@ -15,34 +26,44 @@ public class RecruitingWizard {
     public Position_Demographic__c positionDem{get; set;}
     
     public RecruitingWizard(){
+        
+        //get open positions
         positions = [SELECT Id, Name FROM Position__c WHERE Status__c = 'Open'];
+        
+        //set blank fields
         pickedPosition = null;
         candidateApplication = new Job_Application__c();
         positionCandidate = new Candidate__c();
         experience = new List<Candidate_Experience__c>();
-
+		answers = new List<Candidate_Answer__c>();
+        answerWrappers = new List<AnswerWrapper>();
+        positionDem = new Position_Demographic__c();
+        
+        //fill experience with blanks
         for(Integer i = 0; i < 3; i++){
             Candidate_Experience__c newExperience = new Candidate_Experience__c();
             experience.add(newExperience);
         }
-
+		
+        //fill one education
         education = new List<Candidate_Education__c>{new Candidate_Education__c()};
-        answers = new List<Candidate_Answer__c>();
-        answerWrappers = new List<AnswerWrapper>();
-        positionDem = new Position_Demographic__c();
     }
+    
     public PageReference recruitingLanding(){
         pickedPosition = null;
         return Page.RecruitingLanding;
     }
 
     public PageReference positionPage() {
+        
+        //if position isn't picked it will remain null and throw soft security through the Visualforce page rendered attributes
         if(pickedPosition == null){
         PageReference cp = system.currentPageReference();
         pickedPositionId = cp.getParameters().get('position');
-        system.debug(pickedPositionId);
+            
         PageReference position = Page.PositionPage;
         
+        //get position and questions from picked position
 		pickedPosition = [SELECT Name, Description__c, Course_Dev_Team__c, Type__c, (SELECT Question__c FROM Position_Questions__r) from Position__c Where id = :pickedPositionId];
         }
         return Page.PositionPage;
@@ -57,6 +78,7 @@ public class RecruitingWizard {
     }
     
     public PageReference candidateQuestions(){
+        //if Questions haven't been populated yet
         if(answerWrappers.size() == 0){
         for(Position_Question__c question:pickedPosition.Position_Questions__r){
             Candidate_Answer__c newAnswer = new Candidate_Answer__c(Position_Question__c = question.id);
@@ -80,18 +102,13 @@ public class RecruitingWizard {
         
         if(education.size() < 3){
         	education.add(new Candidate_Education__c());    
-        }else{
-            // add error message
         }
-
         return null;
     }
     
     public PageReference remEd(){
         if(education.size() != 1){
             education.remove(education.size()-1);
-        }else{
-            //add error message
         }
         
         return null;
@@ -102,8 +119,6 @@ public class RecruitingWizard {
             
         	experience.add(new Candidate_Experience__c());    
         
-        }else{
-            // add error message
         }
 
         return null;
@@ -113,8 +128,6 @@ public class RecruitingWizard {
         
         if(experience.size() != 1){
             experience.remove(experience.size()-1);
-        }else{
-            //add error message
         }
         
         return null;

@@ -1,5 +1,6 @@
 <apex:page sidebar="false" showChat="false" showHeader="false" controller="RecruitingWizard" standardStylesheets="false" lightningStylesheets="true"> 
     <apex:slds />
+    <apex:stylesheet value="{!URLFOR($Resource.StyleZip, 'css/index.css')}"/>
     <c:NavBar />
     <c:BackToPositions rendered="{!ISBLANK(pickedPosition.id)}"/>
     <apex:pageBlock rendered="{!NOT(ISBLANK(pickedPosition.id))}">
