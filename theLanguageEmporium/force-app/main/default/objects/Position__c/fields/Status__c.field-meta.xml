@@ -9,6 +9,28 @@
     <type>Picklist</type>
     <valueSet>
         <restricted>true</restricted>
-        <valueSetName>Status</valueSetName>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Open</fullName>
+                <default>true</default>
+                <label>Open</label>
+            </value>
+            <value>
+                <fullName>Interviewing</fullName>
+                <default>false</default>
+                <label>Interviewing</label>
+            </value>
+            <value>
+                <fullName>Offer Made</fullName>
+                <default>false</default>
+                <label>Offer Made</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+        </valueSetDefinition>
     </valueSet>
 </CustomField>
