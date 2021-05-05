@@ -11,12 +11,14 @@ public class OrderCExtension {
     public OrderCExtension(){
         
         //identify current user
-        currentUser = [SELECT Id, ContactId FROM User WHERE id=:userinfo.getuserid() LIMIT 1];
-        system.debug(currentUser.Id);
-        system.debug(currentUser.ContactId);
+        //currentUser = [SELECT Id, ContactId FROM User WHERE id=:userinfo.getuserid() LIMIT 1];
+        //system.debug(currentUser.Id);
+        //system.debug(currentUser.ContactId);
         
         //identify current contact via user
-        currentContact=[SELECT id FROM Contact WHERE id = :currentUser.ContactId LIMIT 1];   
+        //currentContact=[SELECT id FROM Contact WHERE id = :currentUser.ContactId LIMIT 1];
+        currentContact = new Contact(id='0035e000001x68XAAQ');
+        
     
         //if there is no order on page, check to see if an order exists for the current contact
         if (currentOrder == null) {    
@@ -25,7 +27,9 @@ public class OrderCExtension {
             system.debug(currentOrder.id);
         
         //fill the orderList (to be inserted to order) with line items from current order
-        orderList = [SELECT (SELECT Course__c FROM Line_Items__r) FROM Order__c WHERE id= :currentOrder.id].Line_Items__r;
+        if(currentOrder.id!=null){
+        	orderList = [SELECT (SELECT Course__c FROM Line_Items__r) FROM Order__c WHERE id= :currentOrder.id].Line_Items__r;
+        }
                 
         //pouplate courses on VF page from database that have new status
         courses = [SELECT Name, Language__c, of_Lessons__c FROM Course__c WHERE Status__c = 'New'];
@@ -38,7 +42,7 @@ public class OrderCExtension {
         //if there is none, create order, insert, and return
         if(check.size()==0){
             Order__c newOrder = new Order__c(Contact__c = currentContact.id);
-            insert newOrder;
+            //insert newOrder;
             return newOrder;
         }else{
             //otherwise return the first checked value

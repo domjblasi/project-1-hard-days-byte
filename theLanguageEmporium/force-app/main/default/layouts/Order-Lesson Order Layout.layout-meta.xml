@@ -149,7 +149,6 @@
         <fields>NAME</fields>
         <relatedList>Learner_Access__c.Order__c</relatedList>
     </relatedLists>
-    <relatedObjects>ContractId</relatedObjects>
     <relatedObjects>AccountId</relatedObjects>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
