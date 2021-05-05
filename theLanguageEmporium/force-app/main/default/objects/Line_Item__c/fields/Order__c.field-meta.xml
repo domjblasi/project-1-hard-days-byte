@@ -3,10 +3,10 @@
     <fullName>Order__c</fullName>
     <externalId>false</externalId>
     <label>Order</label>
-    <referenceTo>Order</referenceTo>
+    <referenceTo>Order__c</referenceTo>
     <relationshipLabel>Line Items</relationshipLabel>
     <relationshipName>Line_Items</relationshipName>
-    <relationshipOrder>0</relationshipOrder>
+    <relationshipOrder>1</relationshipOrder>
     <reparentableMasterDetail>false</reparentableMasterDetail>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>

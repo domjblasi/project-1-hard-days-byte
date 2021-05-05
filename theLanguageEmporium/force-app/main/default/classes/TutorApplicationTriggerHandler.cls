@@ -3,7 +3,7 @@ public class TutorApplicationTriggerHandler {
     public static void FlagAppReview(List<Tutor_Application__c> appies) {
         
         // Grab Recruiting Queue ID
-        Group recruitingQueue = [SELECT Id FROM Group WHERE Name = 'Recruiting Queue' and Type = 'Queue'];
+        /*Group recruitingQueue = [SELECT Id FROM Group WHERE Name = 'Recruiting Queue' and Type = 'Queue'];
         String recruitingQueueID = recruitingQueue.Id;
 
         List<Task> insertList = new List<Task>();
@@ -27,6 +27,6 @@ public class TutorApplicationTriggerHandler {
             insertList.add(newTask);
         }
 
-        insert insertList;
+        insert insertList;*/
     }
 }

@@ -30,9 +30,9 @@ trigger CourseTrigger on Course__c (before insert, before update, before delete,
             CourseTriggerHandler.CheckApproval(trigger.old);
         }
         when AFTER_INSERT {
-            CourseTriggerHandler.FlagQAReview(trigger.new);
+            //CourseTriggerHandler.FlagQAReview(trigger.new);
             CourseTriggerHandler.CreateProducts(trigger.new);
-            CourseTriggerHandler.SendMail();
+            //CourseTriggerHandler.SendMail();
         }
     }
 }
