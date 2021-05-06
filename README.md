@@ -45,3 +45,23 @@
     - Save
  - You should now be able to view the Landing Page for The Language Emporium from the link in settings
  - Activating the site will open it to for guest users
+## Setup Users
+1.) Create Profile: Clone External Identity called 'Learner'
+2.) Create Role: Product Template, under CEO, create a Role called 'Learner Manager'
+3.) Assign yourself to the Learner Manager Role
+4.) Create an Account: 'Learner Account' [This will hold the contacts created as new users register on the site]
+5.) Copy the Account ID of the Account you just created
+6.) Go to Digital Experiences and set up visualforce pages- Go to administration 
+7.)Under Members - move your Learner Profile to allow it to view 
+8.)Under Setup -> Digital Experience -> Settings -> Administration ( Where you are) -> Login and Registration go through this page,
+  - allow standard profiles for sign up and external use. 
+  - Login Page Type = VisualForce Page (select SiteLogin),
+  -  allow self register,
+  -   Registration Page- config-VisualForce Page(SiteRegister) 
+  -   Profile : Learner 
+  -   Account: Learner Account 
+9.) Go to Force: Allow Object and Field Permissions for the Custom Objects/Fields and Account, Contact
+10.) Under visualforce pages, select the pages to view also ( Pages can be found in documentation also, be sure to move site register and site login also! )
+11.)Go to Developer Console:
+12.) Open Site RegisterController- Change id PORTAL_ACCOUNT_ID = (your Account ID that you copied earlier- ACCOUNT ID not profile!!)
+ 
